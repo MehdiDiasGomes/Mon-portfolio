@@ -95,7 +95,7 @@ body {
 /* HOME */
 
 .home .container {
-    background-image: url('img/header-bg.jpg');
+    background-image: url('img/bg-header.jpg');
     background-size: cover;
     background-position: center;
     background-color: #302f2f;
