@@ -1,0 +1,519 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1E1E1E;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-color: #1e1e1e;
+    --orange-color: #C38903;
+    --white-color: #FFFFFF;
+}
+
+/* ----------------------------------------------------------------- SCROLLBAR -----------------------------------------------------------------  */
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    opacity: 0.5;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+/* ----------------------------------------------------------------- TOP-CV -----------------------------------------------------------------  */
+.top-cv {
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-color: #1E1E1E;
+    background-position: center;
+    background-color: #302f2f;
+    background-blend-mode: multiply;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.top-cv .retour{
+    position: absolute;
+    left: 7rem;
+    top : 4rem;
+}
+
+.top-cv .retour a{
+    color: white;
+    display: flex;
+    gap: 0.5rem;
+    transition: all .55s ease;
+    font-size: 1.2rem;
+}
+
+.top-cv .retour a:hover{
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.09);
+}
+
+.top-cv .txt-title {
+    text-align: center;
+}
+
+.top-cv .txt-title h1 {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3.5rem;
+}
+
+.top-cv .txt-title h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.top-cv .img-title img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.top-cv .social-title {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.top-cv .social-title i {
+    margin-top: 1rem;
+    color: #ffffff;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    border: 1px solid var(--orange-color);
+    border-radius: 1rem;
+    transition: all ease .55s;
+}
+
+.top-cv .social-title i:hover {
+    background: linear-gradient(to left, #C38903, #FFD700);
+    color: var(--white-color);
+    transform: scale(1.09);
+}
+
+.top-cv .info-title {
+    display: flex;
+    gap: 10rem;
+}
+
+.top-cv .info-title h4 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.top-cv .info-title i {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ----------------------------------------------------------------- MIDDLE-CV -----------------------------------------------------------------  */
+
+.middle-cv {
+    display: flex;
+    gap: 1rem
+}
+
+.about-cv {
+    padding-top: 3rem;
+    padding-left: 4rem;
+    transition: all ease .55s;
+    width: 50%;
+}
+
+.about-cv .container {
+    padding: 1rem;
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-cv .container h1 {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.about-cv .container h3 {
+    color: white;
+}
+
+.contact-cv {
+    padding-top: 3rem;
+    padding-left: 4rem;
+    transition: all ease .55s;
+    width: 45%;
+}
+
+.contact-cv .container {
+    padding: 1rem;
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-cv .container h1 {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.contact-cv .container h3 {
+    color: white;
+}
+
+.contact-cv .container i {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ----------------------------------------------------------------- BOTTOM-CV -----------------------------------------------------------------  */
+
+.bottom-cv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.experience-pro {
+    padding-top: 3rem;
+    padding-left: 4rem;
+    transition: all ease .55s;
+    width: 96%;
+}
+
+.experience-pro .container {
+    padding: 1rem;
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.experience-pro .container h1 {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.experience-pro .container h2 {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.experience-pro .container h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.experience-pro .container .content span {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.experience-pro .container .content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-pro .container .content-2 {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-pro .container .content-2 i {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.experience-pro .container .content-2 h4 {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.experience-pro .container .content-2 span {
+    padding-left: 2rem;
+}
+
+.open-cv{
+    display: flex;
+    justify-content: center;
+}
+
+.open-cv .ouvrir-cv{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--orange-color);
+    color: var(--white-color);
+    font-size: 1.3rem;
+    width: 180px;
+    height: 60px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all ease .55s;
+}
+
+.open-cv .ouvrir-cv:hover {
+    transform: scale(1.09);
+    background: linear-gradient(to left, #C38903, #FFD700);
+    color: var(--white-color);
+}
+
+/* ----------------------------------------------------------------- FOOTER -----------------------------------------------------------------  */
+
+.footer {
+    bottom: 0px;
+    padding: 3rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer h5 {
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+
+/* ----------------------------------------------------------------- RESPONSIVE -----------------------------------------------------------------  */
+
+@media (max-width : 1200px) {
+    .container .content-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width : 1050px) {
+    .container .content h2 {
+        font-size: 2rem;
+    }
+
+    .container .content h3 {
+        font-size: 1.3rem;
+    }
+
+    .container .content-2 h4 {
+        font-size: 1rem;
+    }
+
+    .top-cv {
+        padding: 3rem;
+    }
+
+    .top-cv .txt-title h1 {
+        font-size: 3rem;
+    }
+
+    .top-cv .txt-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .top-cv .info-title h4 {
+        font-size: 1.3rem;
+    }
+
+    .top-cv .social-title i {
+        margin-top: 1rem;
+        color: #ffffff;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        ;
+    }
+}
+
+@media (max-width : 860px) {
+    .top-cv .social-title i {
+        margin-top: 1rem;
+        color: #ffffff;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        ;
+    }
+
+    .top-cv .info-title h4 {
+        font-size: 1rem;
+    }
+
+    .about-cv .container h1 {
+        font-size: 1.7rem;
+    }
+
+    .about-cv .container h3 {
+        font-size: 1rem;
+    }
+
+    .contact-cv .container h1 {
+        font-size: 1.7rem;
+    }
+
+    .contact-cv .container h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width : 860px) {
+
+    .top-cv .retour{
+        left: 2rem;
+    }
+
+    .top-cv {
+        width: 100%;
+    }
+
+    .top-cv .txt-title h1 {
+        font-size: 2rem;
+    }
+
+    .top-cv .txt-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .top-cv .info-title {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .middle-cv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-cv {
+        padding-left: 1rem;
+        width: 95%;
+    }
+
+    .about-cv {
+        padding-left: 1rem;
+        width: 95%;
+    }
+
+    .about-cv .container h3 {
+        font-size: 1rem;
+    }
+
+    .contact-cv .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-cv .container h3 {
+        font-size: 1rem;
+    }
+
+    .experience-pro {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        transition: all ease .55s;
+        width: 95%;
+    }
+
+    .experience-pro .container .title h1{
+        font-size: 1.5rem;
+    }
+
+    .experience-pro .container .content h2{
+        font-size: 1.5rem;
+    }
+
+    .experience-pro .container .content h3{
+        font-size: 1rem;
+    }
+
+    .experience-pro .container .content-2 h4{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width : 414px) {
+    .top-cv .retour{
+        left: 1rem;
+        top : 1rem;
+    }
+
+    .top-cv .retour a{
+        font-size: 0.9rem;
+    }
+}
