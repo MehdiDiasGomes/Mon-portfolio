@@ -11,6 +11,24 @@ body {
     background-color: #1e1e1e;
 }
 
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    opacity: 0.5;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -20,7 +38,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
-    background-color: #1e1e1e9d;
+    background-color: #1e1e1e70;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 1000;
 }
 
@@ -78,30 +97,421 @@ body {
     color: transparent;
 }
 
-@media only screen and (min-width : 1224px) and (max-width: 1499px) {
-    
+.menu {
+    display: none;
 }
 
-@media only screen and (min-width : 1500px) and (max-width: 1919px) {
-   
+/* CONTACT */
+
+.formulaire {
+    padding: 15rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/bg-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #302f2f;
+    background-blend-mode: multiply;
+}
+
+.formulaire .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.formulaire .wrapper h2 {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.formulaire .wrapper h3 {
+    text-align: center;
+    color: white;
+}
+
+.formulaire .wrapper .input-box {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulaire .wrapper .input-box textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 8rem;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    resize: none;
+}
+
+.formulaire .wrapper .input-box input {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    border-radius: 10px;
+}
+
+.formulaire .wrapper button {
+    color: white;
+    background-color: #252525;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #C38903, #FFD700);    background-size: 200% 100%;
+    background-position: 100% 100%;
+    transition: background-position .5s;
+}
+
+.formulaire .wrapper button:hover {
+    background-position: 0 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.info .title-header h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.info .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info .container .img img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info .container .title h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.info .container .title h3 {
+    background: linear-gradient(to right, #C38903, #FFD700);    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.1rem;
+}
+
+.info .container .informations i {
+    background: linear-gradient(to right, #C38903, #FFD700);    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.3rem;
+}
+
+.info .container .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info .container .informations span {
+    font-size: 1.3rem;
+    margin-left: 0.2rem;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.footer h5 {
+    font-size: 1rem;
+    color: white
+}
+
+@media only screen and (min-width : 1224px) and (max-width: 1919px) {
+    .formulaire {
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1223px) {
-    /* ... Contenu des médias queries pour la plage 768px - 1223px ... */
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 3rem;
+        height: 100vh;
+        background-color: #1e1e1e;
+        overflow-x: hidden;
+        transition: right 0.3s ease;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .titre {
+        text-align: center;
+    }
+
+    .navbar .nav-links a {
+        background-color: #1e1e1e;
+        border: 1px solid rgba(51, 51, 51, 0.808);
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+        z-index: 1000;
+    }
+
+    .mobilemenu {
+        right: 0;
+    }
+
+    .menu i {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .formulaire {
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 10rem;
+    }
+
+    .info {
+        order: -1;
+    }
+
+    .formulaire .wrapper button {
+        height: 4rem;
+    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* ... Contenu des médias queries pour la plage 768px - 1024px en mode paysage ... */
-}
 
 @media only screen and (min-width: 414px) and (max-width: 767px) {
-    /* ... Contenu des médias queries pour la plage 414px - 767px ... */
-}
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 3rem;
+        height: 100vh;
+        background-color: #1e1e1e;
+        overflow-x: hidden;
+        transition: right 0.3s ease;
+    }
 
-@media only screen and (min-width: 428px) and (max-width: 926px) and (orientation: landscape) {
-    /* ... Contenu des médias queries pour la plage 428px - 926px en mode paysage ... */
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .titre {
+        text-align: center;
+    }
+
+    .navbar .nav-links a {
+        background-color: #1e1e1e;
+        border: 1px solid rgba(51, 51, 51, 0.808);
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+        z-index: 1000;
+    }
+
+    .mobilemenu {
+        right: 0;
+    }
+
+    .menu i {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .formulaire {
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 10rem;
+    }
+
+    .formulaire .wrapper {
+        width: 20rem;
+    }
+
+    .formulaire .wrapper h2 {
+        font-size: 2rem;
+    }
+
+    .info {
+        width: 20rem;
+        order: -1;
+    }
+
+    .info .title-header h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .info .container .title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .info .container .title h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .formulaire .wrapper button {
+        height: 4rem;
+    }
+
+    .info .container .informations span {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-    /* ... Contenu des médias queries pour la plage 320px - 480px ... */
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 3rem;
+        height: 100vh;
+        background-color: #1e1e1e;
+        overflow-x: hidden;
+        transition: right 0.3s ease;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .titre {
+        text-align: center;
+    }
+
+    .navbar .nav-links a {
+        background-color: #1e1e1e;
+        border: 1px solid rgba(51, 51, 51, 0.808);
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+        z-index: 1000;
+    }
+
+    .mobilemenu {
+        right: 0;
+    }
+
+    .menu i {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .formulaire {
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 10rem;
+    }
+
+    .formulaire .wrapper {
+        width: 20rem;
+    }
+
+    .formulaire .wrapper h2 {
+        font-size: 2rem;
+    }
+
+    .info {
+        width: 20rem;
+        order: -1;
+    }
+
+    .info .title-header h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .info .container .title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .info .container .title h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .formulaire .wrapper button {
+        height: 4rem;
+    }
+
+    .info .container .informations span {
+        font-size: 1rem;
+    }
 }

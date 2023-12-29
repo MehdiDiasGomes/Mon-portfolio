@@ -269,6 +269,18 @@ body {
     order: -1;
 }
 
+.footer {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.footer h5 {
+    font-size: 1rem;
+    color: white
+}
+
 @media only screen and (min-width : 1224px) and (max-width: 1499px) {
     .competences .container {
         gap: 10rem;
@@ -506,11 +518,15 @@ body {
 
     .competences .container {
         flex-direction: column;
-        gap: 3rem;
+        gap: 1rem;
+    }
+
+    .competences .container .row{
+        gap: 1rem;
     }
 
     .competences .container .row .comp {
-        width: 15rem;
+        width: 19rem;
     }
 
     .competences .container .row h5 {

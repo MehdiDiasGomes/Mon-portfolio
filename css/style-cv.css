@@ -328,19 +328,15 @@ html {
 /* ----------------------------------------------------------------- FOOTER -----------------------------------------------------------------  */
 
 .footer {
-    bottom: 0px;
-    padding: 3rem;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .footer h5 {
-    color: var(--white-color);
     font-size: 1rem;
+    color: white
 }
 
 

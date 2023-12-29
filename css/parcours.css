@@ -303,6 +303,18 @@ body {
     order: -1;
 }
 
+.footer {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.footer h5 {
+    font-size: 1rem;
+    color: white
+}
+
 /* RESPONSIVE */
 
 @media only screen and (min-width : 768px) and (max-width : 1223px) {

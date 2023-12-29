@@ -23,7 +23,9 @@ sr.reveal('.container-comp .container .comp6', {origin: 'left', delay: 2600})
 //=====PARCOURS=====//
 
 sr.reveal('.title', {origin: 'top', delay: 300})
-sr.reveal('.box1', {origin: 'right', delay: 100})
-sr.reveal('.box2', {origin: 'left', delay: 100})
-sr.reveal('.box3', {origin: 'right', delay: 100})
-sr.reveal('.box4', {origin: 'left', delay: 100})
+sr.reveal('.box1', {origin: 'right', delay: 600})
+sr.reveal('.box2', {origin: 'left', delay: 600})
+sr.reveal('.box3', {origin: 'right', delay: 600})
+sr.reveal('.box4', {origin: 'left', delay: 600})
+sr.reveal('.trait', {origin: 'top', delay: 100})
+sr.reveal('.rond', {origin: 'bottom', delay: 500})
