@@ -63,35 +63,35 @@ body {
     gap: 2rem;
 }
 
-.navbar .nav-links a{
+.navbar .nav-links a {
     font-size: 1.5rem;
     font-weight: bold;
-    color: white; 
+    color: white;
     transition: .3s;
 }
 
-.navbar .nav-links .active{
+.navbar .nav-links .active {
     font-size: 1.5rem;
     font-weight: bold;
-    background: linear-gradient(to right, #C38903, #FFD700);  
+    background: linear-gradient(to right, #C38903, #FFD700);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     transition: .3s;
 }
 
-.navbar .nav-links .active{
+.navbar .nav-links .active {
     font-size: 1.5rem;
     font-weight: bold;
-    background: linear-gradient(to right, #C38903, #FFD700);  
+    background: linear-gradient(to right, #C38903, #FFD700);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     transition: .3s;
 }
 
-.navbar .nav-links a:hover{
-    background: linear-gradient(to right, #C38903, #FFD700);  
+.navbar .nav-links a:hover {
+    background: linear-gradient(to right, #C38903, #FFD700);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -108,7 +108,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background-image: url('../img/bg-header.jpg');
     background-size: cover;
     background-position: center;
@@ -183,7 +183,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    background: linear-gradient(to right, #C38903, #FFD700);    background-size: 200% 100%;
+    background: linear-gradient(to right, #C38903, #FFD700);
+    background-size: 200% 100%;
     background-position: 100% 100%;
     transition: background-position .5s;
 }
@@ -226,14 +227,16 @@ body {
 }
 
 .info .container .title h3 {
-    background: linear-gradient(to right, #C38903, #FFD700);    -webkit-background-clip: text;
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-size: 1.1rem;
 }
 
 .info .container .informations i {
-    background: linear-gradient(to right, #C38903, #FFD700);    -webkit-background-clip: text;
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-size: 1.3rem;
@@ -331,6 +334,19 @@ body {
     .formulaire .wrapper button {
         height: 4rem;
     }
+
+    .formulaire .wrapper {
+        width: 100%;
+    }
+
+    .formulaire .info {
+        width: 100%;
+    }
+
+    .formulaire .info {
+        text-align: center;
+    }
+
 }
 
 
@@ -393,7 +409,17 @@ body {
     }
 
     .formulaire .wrapper h2 {
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+
+    .formulaire .wrapper .input-box input {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .formulaire .wrapper .input-box textarea {
+        width: 100%;
+        font-size: 0.8rem;
     }
 
     .info {
@@ -405,7 +431,7 @@ body {
         font-size: 1.5rem;
         text-align: center;
     }
-    
+
     .info .container .title h2 {
         font-size: 1.5rem;
         text-align: center;
@@ -420,8 +446,12 @@ body {
         height: 4rem;
     }
 
-    .info .container .informations span {
-        font-size: 1rem;
+    .info .container .informations a span {
+        font-size: 0.8rem;
+    }
+
+    .info .container .informations a i {
+        font-size: 0.9rem;
     }
 }
 
@@ -484,7 +514,17 @@ body {
     }
 
     .formulaire .wrapper h2 {
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+
+    .formulaire .wrapper .input-box input {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .formulaire .wrapper .input-box textarea {
+        width: 100%;
+        font-size: 0.8rem;
     }
 
     .info {
@@ -496,7 +536,7 @@ body {
         font-size: 1.5rem;
         text-align: center;
     }
-    
+
     .info .container .title h2 {
         font-size: 1.5rem;
         text-align: center;
@@ -511,7 +551,11 @@ body {
         height: 4rem;
     }
 
-    .info .container .informations span {
-        font-size: 1rem;
+    .info .container .informations a span {
+        font-size: 0.8rem;
+    }
+
+    .info .container .informations a i {
+        font-size: 0.9rem;
     }
 }
