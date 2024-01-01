@@ -14,6 +14,13 @@
     <script src="../js/mail.js" defer></script>
     <script src="../js/main.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("4U1La-wWYO81095y-");
+        })();
+    </script>
     <title>Accueil - Mehdi DIAS GOMES</title>
 </head>
 
@@ -49,7 +56,7 @@
                     <input type="text" placeholder="Objet" id="objet">
                     <textarea id="area" name="message" placeholder="Message" required=""></textarea>
                 </div>
-                <button class="btn" onclick="sendEmail()"><i class="ri-send-plane-fill"></i></button>
+                <button class="btn" onclick="envoiEmail()"><i class="ri-send-plane-fill"></i></button>
             </form>
         </div>
 

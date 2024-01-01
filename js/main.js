@@ -42,26 +42,3 @@ typewriter
   .typeString('<span style="color: #FFFFFF;">REACT</span> !')
   .pauseFor(300)
   .start();
-
-function sendEmail() {
-  let parms = {
-    name: document.getElementById("ebook").value
-  };
-
-  emailjs.send("service_7cwu2gi", "template_ekgozyu", parms)
-    .then(function (response) {
-      console.log("Email envoyé avec succès : ", response);
-      displayMessage("success", "Email envoyé avec succès");
-    })
-    .catch(function (error) {
-      console.error("Erreur lors de l'envoi de l'email : ", error);
-      // Afficher un message d'erreur à l'utilisateur
-      displayMessage("error", "Échec de l'envoi de l'email");
-    });
-}
-
-function displayMessage(type, message) {
-  // Vous pouvez personnaliser cette fonction pour afficher le message à l'utilisateur
-  // Par exemple, en modifiant le contenu d'un élément HTML ou en affichant une boîte de dialogue
-  alert(message);
-}

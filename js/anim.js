@@ -14,11 +14,11 @@ sr.reveal('.home .home-img', {origin: 'right', delay: 100})
 sr.reveal('.contact', {origin: 'top', delay: 100})
 sr.reveal('.competences .title', {origin: 'top', delay: 100})
 sr.reveal('.container-comp .container .comp1', {origin: 'left', delay: 100})
-sr.reveal('.container-comp .container .comp2', {origin: 'left', delay: 600})
-sr.reveal('.container-comp .container .comp3', {origin: 'left', delay: 1100})
-sr.reveal('.container-comp .container .comp4', {origin: 'left', delay: 1600})
-sr.reveal('.container-comp .container .comp5', {origin: 'left', delay: 2100})
-sr.reveal('.container-comp .container .comp6', {origin: 'left', delay: 2600})
+sr.reveal('.container-comp .container .comp2', {origin: 'left', delay: 200})
+sr.reveal('.container-comp .container .comp3', {origin: 'left', delay: 300})
+sr.reveal('.container-comp .container .comp4', {origin: 'left', delay: 400})
+sr.reveal('.container-comp .container .comp5', {origin: 'left', delay: 500})
+sr.reveal('.container-comp .container .comp6', {origin: 'left', delay: 600})
 
 //=====PARCOURS=====//
 

@@ -11,6 +11,24 @@ body {
     background-color: #1e1e1e;
 }
 
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #C38903, #FFD700);
+    opacity: 0.5;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -79,45 +97,139 @@ body {
     color: transparent;
 }
 
+.menu {
+    display: none;
+}
+
 /* PROJET */
 
-.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.title {
+    padding-top: 8rem;
     text-align: center;
 }
 
-.container i {
-    font-size: 20rem;
+.title h2{
+    font-size: 4rem;
+    color: white;
+}
+
+.title span{
+    color: white;
+}
+
+.title h3{
+    font-size: 2rem;
     background: linear-gradient(to right, #C38903, #FFD700);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.container h2 {
-    font-size: 3rem;
+.projet {
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projet .container ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.projet .container ul a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 35rem;
+    transition: .3s;
+    background-color: #141414;
+}
+
+.projet .container ul a:hover{
+    background-color: #252525;
+}
+
+.projet .container ul a h3{
     color: white;
+    font-size: 2rem;
 }
 
-.footer {
-    position: fixed;
-    bottom: 1.5rem;
-    left: 50%;
-    transform: translate(-50%);
+.projet .container ul a p{
+    background: linear-gradient(to right, #C38903, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.footer h5 {
-    font-size: 1rem;
-    color: white
+.projet .container ul .text{
+    text-align: center;
+    order: -1;
 }
 
-@media only screen and (min-width : 1224px) and (max-width: 1499px) {}
+.projet .container ul img{
+    width: 25rem;
+    border-radius: 20px;
+}
 
-@media only screen and (min-width : 1500px) and (max-width: 1919px) {}
+@media only screen and (min-width : 1500px) and (max-width: 1919px) {
+
+    .projet .container ul img{
+        width: 18rem;
+    }
+
+    .projet .container ul a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        border: 1px solid rgb(97, 97, 97);
+        padding: 2rem;
+        border-radius: 20px;
+        width: 25rem;
+        transition: .3s;
+    }
+
+    .projet .container ul a p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width : 1224px) and (max-width: 1499px) {
+    .projet .container ul img{
+        width: 18rem;
+        order: -1;
+    }
+
+    .projet .container ul a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .projet .container ul a .text{
+        max-width: 50%;
+    }
+
+    .projet .container ul a p{
+        font-size: 1.5rem;
+    }
+
+    .projet .container ul{
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+}
 
 @media only screen and (min-width : 768px) and (max-width : 1223px) {
     .navbar {
@@ -174,10 +286,37 @@ body {
     .container .titre h2 {
         font-size: 2rem;
     }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* ... Contenu des médias queries pour la plage 768px - 1024px en mode paysage ... */
+    .projet .container ul img{
+        width: 15rem;
+        order: -1;
+    }
+
+    .projet .container ul{
+        padding: 2rem;
+    }
+
+    .projet .container ul a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .projet .container ul a .text{
+        max-width: 50%;
+    }
+
+    .projet .container ul a p{
+        font-size: 1.2rem;
+    }
+
+    .projet .container ul{
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 414px) and (max-width: 767px) {
@@ -240,10 +379,50 @@ body {
         font-size: 1.5rem;
         text-align: center;
     }
-}
 
-@media only screen and (min-width: 428px) and (max-width: 926px) and (orientation: landscape) {
-    /* ... Contenu des médias queries pour la plage 428px - 926px en mode paysage ... */
+    .title h2{
+        font-size: 3rem;
+        color: white;
+    }
+    
+    .title span{
+        color: white;
+    }
+    
+    .title h3{
+        font-size: 1.5rem;
+        background: linear-gradient(to right, #C38903, #FFD700);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .projet .container ul img{
+        width: 15rem;
+        order: -1;
+    }
+
+    .projet .container ul{
+        padding: 2rem;
+    }
+
+    .projet .container ul a{
+        display: flex;
+        flex-direction: colu;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .projet .container ul a p{
+        font-size: 1rem;
+    }
+
+    .projet .container ul{
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
@@ -320,5 +499,54 @@ body {
     .container h2 {
         font-size: 1rem;
         text-align: center;
+    }
+    
+    .title h2{
+        font-size: 3rem;
+        color: white;
+    }
+    
+    .title span{
+        color: white;
+    }
+    
+    .title h3{
+        font-size: 1.5rem;
+        background: linear-gradient(to right, #C38903, #FFD700);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .projet .container ul img{
+        width: 12rem;
+        order: -1;
+    }
+
+    .projet .container ul{
+        padding: 2rem;
+    }
+
+    .projet .container ul a{
+        display: flex;
+        flex-direction: colu;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .projet .container ul a h3{
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .projet .container ul a p{
+        font-size: 0.8rem;
+    }
+
+    .projet .container ul{
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
     }
 }
