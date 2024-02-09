@@ -1,5 +1,3 @@
-import Devinette from "../Assets/img/Projets/devinette.png"
-import { CiLocationArrow1 } from "react-icons/ci";
 import { projetsConst } from "../Constants/index"
 import ProjetComp from "../Components/Projets"
 
