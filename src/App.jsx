@@ -3,6 +3,7 @@ import Home from './Pages/Home'
 import Navbar from './Layout/Navbar'
 import Xp from './Pages/Xp'
 import Footer from './Layout/Footer'
+import Projets from './Pages/Projets'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <div className="py-32 flex flex-col gap-20">
         <Home />
         <Xp />
+        <Projets />
       </div>
 
       <div className="footer">

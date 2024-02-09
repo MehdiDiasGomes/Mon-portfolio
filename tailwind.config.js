@@ -29,6 +29,10 @@ module.exports = {
         navFontSize : '1.3rem',
       },
 
+      width: {
+        projetsImg: '25rem'
+      }
+
     },
   },
   plugins: [],
