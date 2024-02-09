@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
 
+      colors: {
         // Dégradé de couleurs
         gradientPrimary: {
           DEFAULT: 'rgb(255,134,96)'
@@ -22,12 +22,13 @@ module.exports = {
         secondary: {
           DEFAULT: 'rgb(197,197,197)'
         },
-
       },
 
       fontSize: {
         parag : '1.2rem',
-      }
+        navFontSize : '1.3rem',
+      },
+
     },
   },
   plugins: [],
