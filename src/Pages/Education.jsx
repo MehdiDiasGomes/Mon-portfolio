@@ -6,7 +6,7 @@ const Experiences = () => {
     return (
         <div className='flex flex-col gap-20' id='educ'>
             <div className='flex justify-center'>
-                <h2 className='text-5xl bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text font-bold'>ÉDUCATION</h2>
+                <h2 className='md:text-5xl sm:text-3xl bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text font-bold'>ÉDUCATION</h2>
             </div>
 
             <div className="flex flex-col gap-20 pcScreen:px-64 sm:px-10 md:px-14 ">
