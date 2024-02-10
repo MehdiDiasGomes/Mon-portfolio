@@ -24,7 +24,7 @@ function App() {
         </div>
       </div>
 
-      <div className="footer hidden">
+      <div className="footer">
         <Footer />
       </div>
 
