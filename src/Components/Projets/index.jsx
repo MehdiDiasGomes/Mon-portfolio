@@ -3,7 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const index = ({ img, titre }) => {
 
     return (
-        <a href="#" className="w-projetsImg rounded-xl group">
+        <a href="#" className="w-projetsImg rounded-xl group md:w-projetsImgMd">
             <img src={img} alt="" />
             <div className="flex justify-between items-center bg-[#2A2A2A] duration-300 text-primary p-5 group-hover:bg-[#707070]">
                 <div className="flex flex-col">

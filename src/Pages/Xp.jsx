@@ -3,7 +3,7 @@ import { xpConst } from '../Constants';
 
 const Xp = () => {
     return (
-        <div className='flex flex-col justify-center items-center gap-10'>
+        <div className='flex flex-col justify-center items-center gap-10' id='xp'>
             <h3 className='text-2xl text-secondary font-bold'>EXPÉRIENCE AVEC</h3>
             <div className="flex gap-20">
                 {xpConst.map((e, index) => (

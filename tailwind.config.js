@@ -4,6 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      'sm': '310px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'pcScreen': '1700px',
+    },
+
     extend: {
 
       colors: {
@@ -25,12 +33,14 @@ module.exports = {
       },
 
       fontSize: {
-        parag : '1.2rem',
-        navFontSize : '1.3rem',
+        parag: '1.2rem',
+        navFontSize: '1.3rem',
       },
 
       width: {
-        projetsImg: '25rem'
+        projetsImg: '25rem',
+        projetsImgMd: '20rem',
+        educImg: '3rem'
       }
 
     },

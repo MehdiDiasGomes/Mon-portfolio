@@ -5,4 +5,23 @@
 :root {
     background-color: #161513;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #121212;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(154,51,255);
+    opacity: 0.5;
+    border-radius: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+  }

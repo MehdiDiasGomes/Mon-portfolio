@@ -11,7 +11,7 @@ const Footer = () => {
                     <h3 className='text-primary text-4xl font-bold'>Contact</h3>
                 </div>
                 <div>
-                    <p className='text-secondary text-parag'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ad voluptates voluptate optio officiis magni deleniti distinctio molestias ab ut.</p>
+                    <p className='text-secondary text-parag'>Je suis un jeune développeur web full-stack âgé de 20 ans, à la recherche d&apos;une opportunité de contrat en alternance afin de préparer un Bac+3 à Metz Numeric School pour l&apos;année académique 2024-2025.</p>
                 </div>
                 <div>
                     <a className='text-primary text-parag flex items-center gap-1' href="mailto:diasgomes.mehdicours@gmail.com"><MdOutlineMailOutline />diasgomes.mehdicours@gmail.com</a>
