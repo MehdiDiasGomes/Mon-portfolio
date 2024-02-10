@@ -34,6 +34,7 @@ module.exports = {
 
       fontSize: {
         parag: '1.2rem',
+        paragMobile: '0.9rem',
         navFontSize: '1.3rem',
       },
 

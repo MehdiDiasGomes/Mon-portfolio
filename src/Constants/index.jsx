@@ -48,13 +48,13 @@ export const EducationConst = [
     },
     {
         img: Briquerie,
-        titre: 'BAC Professionnel (SN)',
+        titre: 'BAC Professionnel à LPO La Briquerie (SN)',
         date: '2018-2021',
         parag: "Pendant mes années au LPO La Briquerie à Thionville, j'ai préparé et réussi mon bac professionnel en Systèmes Numériques. Grâce à des cours enrichissants et des travaux pratiques stimulants, j'ai acquis les compétences nécessaires pour évoluer dans le domaine numérique. Cette expérience a consolidé ma passion pour les technologies modernes et renforcé ma détermination à réussir dans ce domaine."
     },
     {
         img: JM,
-        titre: 'Brevet des collèges',
+        titre: 'Brevet des collèges au Collège Jean Moulin',
         date: '2014-2018',
         parag: "Pendant mes années au collège, de 2014 à 2018, j'ai obtenu mon brevet des collèges. Ces années de scolarité ont été une période d'apprentissage essentielle, où j'ai acquis les bases nécessaires pour la suite de mon parcours éducatif."
     },
