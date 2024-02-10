@@ -17,10 +17,10 @@ const Navbar = () => {
                     <img src={Logo} alt="Logo du site" className='rounded-full' />
                 </div>
                 <ul className='flex items-center justify-center gap-10 text-xl text-white max-lg:flex-col max-lg:text-2xl'>
-                    <li><a href="#" onClick={handleShowNav}>Accueil</a></li>
-                    <li><a href="#projets" onClick={handleShowNav}>Projets</a></li>
-                    <li><a href="#educ" onClick={handleShowNav}>Éducation</a></li>
-                    <li><a href="#" onClick={handleShowNav}>Contact</a></li>
+                    <li><a href="#" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Accueil</a></li>
+                    <li><a href="#projets" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Projets</a></li>
+                    <li><a href="#educ" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Éducation</a></li>
+                    <li><a href="#" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Contact</a></li>
                 </ul>
             </nav>
             <RiMenuLine className='text-primary font-bold text-4xl fixed right-5 top-5 cursor-pointer lg:hidden' onClick={handleShowNav}/>

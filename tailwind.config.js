@@ -36,6 +36,7 @@ module.exports = {
         parag: '1.2rem',
         paragMobile: '0.9rem',
         navFontSize: '1.3rem',
+        contactSize: '1.4rem'
       },
 
       width: {
