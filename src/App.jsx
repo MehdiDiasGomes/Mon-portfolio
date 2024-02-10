@@ -5,7 +5,6 @@ import Xp from './Pages/Xp'
 import Footer from './Layout/Footer'
 import Projets from './Pages/Projets'
 import Education from './Pages/Education'
-import Contact from './Pages/Contact'
 
 function App() {
 
@@ -22,7 +21,6 @@ function App() {
           <Xp />
           <Projets />
           <Education />
-          <Contact />
         </div>
       </div>
 
