@@ -1,29 +1,27 @@
 import './App.css'
-import Home from './Pages/Home'
 import Navbar from './Layout/Navbar'
-import Xp from './Pages/Xp'
+import PagePrincipal from './Pages/PagePrincipal';
 import Footer from './Layout/Footer'
-import Projets from './Pages/Projets'
-import Education from './Pages/Education'
+import { Routes, Route } from 'react-router-dom';
+import PixelArt from './Pages/Projets/PixelArt'
 
 function App() {
 
   return (
     <div className="app flex flex-col gap-10">
 
+      {/* NAVBAR */}
       <div className="navbar">
         <Navbar />
       </div>
 
-      <div className="flex justify-center items-center">
-        <div className="py-32 flex flex-col gap-28 pcScreen:w-9/12 sm:w-full">
-          <Home />
-          <Xp />
-          <Projets />
-          <Education />
-        </div>
-      </div>
+      {/* PAGES */}
+      <Routes>
+        <Route path='/' element={<PagePrincipal />} />
+        <Route path='/pixelart' element={<PixelArt />} />
+      </Routes>
 
+      {/* FOOTER */}
       <div className="footer">
         <Footer />
       </div>

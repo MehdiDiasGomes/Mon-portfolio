@@ -25,7 +25,8 @@ export const projetsConst = [
     //PixelArt
     {
         img: PixelArt,
-        titre: 'Jeu de pixel art'
+        titre: 'Jeu de pixel art',
+        lien: '/pixelart'
     },
     //ToDoList
     {
