@@ -6,7 +6,6 @@ import PixelArt from './Pages/Projets/PixelArt'
 import Devinette from './Pages/Projets/Devinette';
 import ToDoList from './Pages/Projets/ToDoList';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import ScrollToTop from './components/Scripts/ScrollToTop';
 
 function App() {
 
@@ -22,8 +21,6 @@ function App() {
           <Navbar />
         </div>
       )}
-
-      <ScrollToTop />
 
       {/* PAGES */}
       <Routes>
