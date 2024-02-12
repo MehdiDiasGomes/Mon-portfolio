@@ -1,7 +1,7 @@
 import React from 'react'
 import EnCours from '../EnCours';
 
-const PixelArt = () => {
+const ToDoList = () => {
     return (
         <div>
             <EnCours />
@@ -9,4 +9,4 @@ const PixelArt = () => {
     )
 }
 
-export default PixelArt;
+export default ToDoList;

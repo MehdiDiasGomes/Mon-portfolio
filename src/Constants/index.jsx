@@ -31,12 +31,14 @@ export const projetsConst = [
     //ToDoList
     {
         img: ToDoList,
-        titre: 'ToDoList en ligne'
+        titre: 'ToDoList en ligne',
+        lien : '/todolist'
     },
     //Devinette
     {
         img: Devinette,
-        titre: 'Jeu de devinette'
+        titre: 'Jeu de devinette',
+        lien : '/devinette'
     },
 ]
 
