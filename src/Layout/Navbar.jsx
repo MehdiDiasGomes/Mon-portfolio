@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className={`flex justify-around px-24 py-8 bg-[#191919] items-center duration-300 fixed w-full max-lg:flex-col max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:gap-16  ${showNav ? "max-lg:right-[0]" : "max-lg:right-[-100%]" }`}>
+            <nav className={`flex justify-around px-24 py-8 bg-[#191919] items-center duration-300 fixed w-full max-lg:flex-col max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:gap-16  ${showNav ? "max-lg:right-[0]" : "max-lg:right-[-100%]"}`}>
                 <div className="w-10 max-lg:w-24">
                     <img src={Logo} alt="Logo du site" className='rounded-full' />
                 </div>
@@ -24,7 +24,9 @@ const Navbar = () => {
                     <li><a href="#contact" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Contact</a></li>
                 </ul>
             </nav>
-            <RiMenuLine className='text-primary font-bold text-4xl fixed right-5 top-5 cursor-pointer lg:hidden' onClick={handleShowNav}/>
+            <div className='text-primary font-bold text-4xl fixed right-5 top-5 cursor-pointer lg:hidden'>
+                <i className={`${ showNav ? "ri-close-line" : "ri-menu-3-line"}`} onClick={handleShowNav}></i>
+            </div>
         </div>
     )
 }

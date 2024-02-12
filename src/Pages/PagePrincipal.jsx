@@ -8,7 +8,7 @@ const PagePrincipal = () => {
         <div>
             {/* PAGES */}
             <div className="flex justify-center items-center">
-                <div className="py-32 flex flex-col gap-28 pcScreen:w-9/12 sm:w-full">
+                <div className="py-32 flex flex-col gap-28 pcScreen:w-9/12 md:w-1/2 sm:w-full">
                     <Home />
                     <Xp />
                     <Projets />
