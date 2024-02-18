@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className={`flex justify-around px-24 py-8 bg-[#191919] items-center duration-300 fixed w-full max-lg:flex-col max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:gap-16  ${showNav ? "max-lg:right-[0]" : "max-lg:right-[-100%]"}`}>
+            <nav className={` z-50 flex justify-around px-24 py-8 bg-[#191919] items-center duration-300 fixed w-full max-lg:flex-col max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:gap-16  ${showNav ? "max-lg:right-[0]" : "max-lg:right-[-100%]"}`}>
                 <div className="w-10 max-lg:w-24">
                     <img src={Logo} alt="Logo du site" className='rounded-full' />
                 </div>
