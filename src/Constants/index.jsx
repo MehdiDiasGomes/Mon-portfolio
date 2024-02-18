@@ -63,3 +63,14 @@ export const EducationConst = [
         parag: "Pendant mes années au collège, de 2014 à 2018, j'ai obtenu mon brevet des collèges. Ces années de scolarité ont été une période d'apprentissage essentielle, où j'ai acquis les bases nécessaires pour la suite de mon parcours éducatif."
     },
 ]
+
+export const LienConst = [
+    {
+        icon: 'ri-linkedin-fill',
+        lien: 'https://www.linkedin.com/in/mehdi-dias-gomes-056654239/'
+    },
+    {
+        icon: 'ri-github-line',
+        lien: 'https://github.com/MehdiDiasGomes'
+    },
+]
