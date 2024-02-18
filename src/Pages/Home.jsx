@@ -7,7 +7,7 @@ const Home = () => {
         <div className='flex flex-col items-center justify-center'>
             <div className='flex flex-col gap-12 justify-center items-center'>
                 <div className="flex flex-col gap-12 items-center">
-                    <img src={Mehdi} alt="Logo du site" className="w-44 rounded-full" />
+                    <img src={Mehdi} alt="Logo du site" className="w-44 h-44 object-cover rounded-full" />
                     <h1 className='md:text-5xl sm:text-3xl text-white font-bold text-center'>Mehdi <br />
                         <span className='bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text block mt-2'> DIAS GOMES</span>
                     </h1>
