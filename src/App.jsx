@@ -6,6 +6,7 @@ import PixelArt from './Pages/Projets/PixelArt'
 import Devinette from './Pages/Projets/Devinette';
 import ToDoList from './Pages/Projets/ToDoList';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
 
   return (
     <div className="app flex flex-col gap-10">
+
+      <ScrollToTop />
 
       {!isPixelArtPage && (
         <div className="navbar">
