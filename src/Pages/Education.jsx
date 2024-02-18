@@ -9,7 +9,7 @@ const Experiences = () => {
                 <h2 className='md:text-5xl sm:text-3xl bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text font-bold'>ÉDUCATION</h2>
             </div>
 
-            <div className="flex flex-col gap-20 pcScreen:px-64 sm:px-10 md:px-14 ">
+            <div className="flex flex-col gap-20 pcScreen:px-64 sm:px-10 md:px-14 lg:px-0">
                 {EducationConst.map((e, index) => (
                     <EducComp key={index} img={e.img} titre={e.titre} date={e.date} parag={e.parag}/>
                 ))}
