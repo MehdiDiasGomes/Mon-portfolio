@@ -5,7 +5,6 @@ import Devinette from "../Assets/img/Projets/devinette.png"
 
 import Briquerie from "../Assets/img/Educ/laBriquerie.png"
 import JM from "../Assets/img/Educ/jeanMoulin.png"
-import { GrMysql } from "react-icons/gr";
 
 export const xpConst = [
     {
