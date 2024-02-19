@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Zoom from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const EnCours = () => {
     return (

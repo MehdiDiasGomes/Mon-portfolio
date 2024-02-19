@@ -1,6 +1,6 @@
 import { projetsConst } from "../Constants/index"
 import ProjetComp from "../Components/Projets"
-import Zoom from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const Projets = () => {
     return (

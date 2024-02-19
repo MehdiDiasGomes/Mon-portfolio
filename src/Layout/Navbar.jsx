@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Logo from '../Assets/img/Logo.png'
-import { Link } from "react-router-dom";
 import { RiMenuLine } from "react-icons/ri";
 
 const Navbar = () => {
@@ -18,7 +17,7 @@ const Navbar = () => {
                     <img src={Logo} alt="Logo du site" className='rounded-full' />
                 </div>
                 <ul className='flex items-center justify-center gap-10 text-xl text-white max-lg:flex-col max-lg:text-2xl'>
-                    <li><Link to="/" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Accueil</Link></li>
+                    <li><a href="#" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Accueil</a></li>
                     <li><a href="#projets" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Projets</a></li>
                     <li><a href="#educ" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Éducation</a></li>
                     <li><a href="#contact" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Contact</a></li>

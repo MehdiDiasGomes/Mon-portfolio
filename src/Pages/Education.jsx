@@ -1,7 +1,7 @@
 import React from 'react'
 import { EducationConst } from "../Constants"
 import EducComp from "../Components/Educ"
-import Zoom from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const Experiences = () => {
     return (

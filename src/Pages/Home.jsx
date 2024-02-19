@@ -3,7 +3,7 @@ import Mehdi from '../Assets/img/Mehdi.jpg'
 import monCV from "../Assets/doc/CV_Mehdi_DIAS_GOMES.pdf"
 import { LienConst } from '../Constants'
 import SocialComp from '../Components/Social'
-import Zoom from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const Home = () => {
     return (

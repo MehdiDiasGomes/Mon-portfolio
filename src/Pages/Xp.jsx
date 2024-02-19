@@ -1,6 +1,6 @@
 import Exp from '../Components/Exp';
 import { xpConst } from '../Constants';
-import Zoom from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const Xp = () => {
     return (
