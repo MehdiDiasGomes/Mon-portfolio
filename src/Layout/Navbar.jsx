@@ -22,7 +22,7 @@ const Navbar = () => {
                     <li><a href="#contact" onClick={handleShowNav} className='hover:text-gradientSecondary duration-300'>Contact</a></li>
                 </ul>
             </nav>
-            <div className='text-primary font-bold text-4xl fixed right-5 top-5 cursor-pointer lg:hidden'>
+            <div className='text-primary z-50 font-bold text-4xl fixed right-5 top-5 cursor-pointer lg:hidden'>
                 <i className={`${ showNav ? "ri-close-line" : "ri-menu-3-line"}`} onClick={handleShowNav}></i>
             </div>
         </div>
