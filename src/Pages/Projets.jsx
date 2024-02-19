@@ -1,10 +1,10 @@
 import { projetsConst } from "../Constants/index"
 import ProjetComp from "../Components/Projets"
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Fade';
 
 const Projets = () => {
     return (
-        <Fade left>
+        <Zoom>
             <div className='flex flex-col items-center justify-center gap-20' id="projets">
                 <h2 className='md:text-5xl sm:text-3xl bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text font-bold'>PROJETS</h2>
 
@@ -16,7 +16,7 @@ const Projets = () => {
 
                 </div>
             </div>
-        </Fade>
+        </Zoom>
     )
 }
 
