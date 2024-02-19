@@ -1,7 +1,7 @@
 import React from 'react'
 import { EducationConst } from "../Constants"
 import EducComp from "../Components/Educ"
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 const Experiences = () => {
     return (
@@ -12,11 +12,11 @@ const Experiences = () => {
 
 
             <div className="flex flex-col gap-20 pcScreen:px-64 sm:px-10 md:px-14 lg:px-0">
-                <Zoom>
+                <Fade left>
                     {EducationConst.map((e, index) => (
                         <EducComp key={index} img={e.img} titre={e.titre} date={e.date} parag={e.parag} />
                     ))}
-                </Zoom>
+                </Fade>
             </div>
 
 
