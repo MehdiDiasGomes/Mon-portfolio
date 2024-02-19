@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Logo from '../Assets/img/Logo.png'
-import { RiMenuLine } from "react-icons/ri";
 
 const Navbar = () => {
 

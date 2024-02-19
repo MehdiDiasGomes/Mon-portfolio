@@ -26,7 +26,6 @@ const Home = () => {
                             <SocialComp key={index} lien={e.lien} icon={e.icon} />
                         ))}
                     </div>
-
                 </div>
             </div>
         </Zoom>
