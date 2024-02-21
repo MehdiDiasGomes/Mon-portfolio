@@ -6,6 +6,8 @@ import Devinette from "../Assets/img/Projets/devinette.png"
 import Briquerie from "../Assets/img/Educ/laBriquerie.png"
 import JM from "../Assets/img/Educ/jeanMoulin.png"
 
+import PixelArtPic from '../Assets/img/Projets/Rectangle1.png'
+
 export const xpConst = [
     {
         icon: "ri-javascript-fill"
@@ -32,13 +34,13 @@ export const projetsConst = [
     {
         img: ToDoList,
         titre: 'ToDoList en ligne',
-        lien : '/todolist'
+        lien: '/todolist'
     },
     //Devinette
     {
         img: Devinette,
         titre: 'Jeu de devinette',
-        lien : '/devinette'
+        lien: '/devinette'
     },
 ]
 
@@ -47,19 +49,19 @@ export const EducationConst = [
         img: Briquerie,
         titre: 'BAC+2 à LPO La Briquerie (SNIR)',
         date: '2021-2023',
-        parag: "Au cours de mon parcours au LPO La Briquerie à Thionville, j'ai poursuivi mes études jusqu'à obtenir mon BTS en Systèmes Numériques, Informatique et Réseaux. Cette formation m'a permis d'approfondir mes connaissances, notamment dans le développement logiciel. Grâce à des enseignements de qualité et à des projets concrets, j'ai acquis des compétences techniques solides qui m'ont préparé à relever les défis du monde professionnel de l'informatique. Cette expérience a été fondamentale pour affiner ma passion et consolider mes ambitions dans ce domaine en constante évolution."
+        parag: "Obtention de mon BTS Systèmes Numériques Informatiques & Réseaux"
     },
     {
         img: Briquerie,
         titre: 'BAC Professionnel à LPO La Briquerie (SN)',
         date: '2018-2021',
-        parag: "Pendant mes années au LPO La Briquerie à Thionville, j'ai préparé et réussi mon bac professionnel en Systèmes Numériques. Grâce à des cours enrichissants et des travaux pratiques stimulants, j'ai acquis les compétences nécessaires pour évoluer dans le domaine numérique. Cette expérience a consolidé ma passion pour les technologies modernes et renforcé ma détermination à réussir dans ce domaine."
+        parag: "Obtention de mon BAC Systèmes Numériques"
     },
     {
         img: JM,
         titre: 'Brevet des collèges au Collège Jean Moulin',
         date: '2014-2018',
-        parag: "Pendant mes années au collège, de 2014 à 2018, j'ai obtenu mon brevet des collèges. Ces années de scolarité ont été une période d'apprentissage essentielle, où j'ai acquis les bases nécessaires pour la suite de mon parcours éducatif."
+        parag: "Obtention de mon brevet des collèges"
     },
 ]
 
@@ -72,4 +74,36 @@ export const LienConst = [
         icon: 'ri-github-line',
         lien: 'https://github.com/MehdiDiasGomes'
     },
+]
+
+export const ProjetsContenuConst = [
+    //Pixel Art
+    {
+        titre: 'Pixel Art',
+        img: PixelArtPic,
+        desc: "Ce projet implique la création d'une interface permettant à l'utilisateur de créer une grille de dimensions personnalisées (jusqu'à un maximum de 20 par 20). Ensuite, il pourra réaliser des œuvres de pixel art en utilisant une palette de couleurs proposée directement sur le site.",
+        maquettingTitre: 'Figma',
+        devTitre: 'React.js',
+        hebergementTitre: 'Vercel',
+    },
+
+    //ToDoList
+    // {
+    //     titre: '',
+    //     img: '',
+    //     desc: '',
+    //     maquettingTitre: '',
+    //     devTitre: '',
+    //     hebergementTitre: '',
+    // },
+
+    //Devinette
+    // {
+    //     titre: '',
+    //     img: '',
+    //     desc: '',
+    //     maquettingTitre: '',
+    //     devTitre: '',
+    //     hebergementTitre: '',
+    // },
 ]
