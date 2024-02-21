@@ -35,17 +35,17 @@ const index = ({ titre, img, desc, maquettingTitre, devTitre, hebergementTitre }
                     </div>
 
                     <div className='flex flex-col gap-10'>
-                        <h3 className='text-3xl bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text font-bold'>Description du projet</h3>
-                        <p className='text-primary text-xl text-justify'>{desc}</p>
+                        <h3 className='text-3xl text-primary font-bold'>Description du projet</h3>
+                        <p className='text-secondary text-xl text-justify'>{desc}</p>
                     </div>
 
                     <div className='flex flex-col gap-10'>
 
-                        <h3 className='text-3xl bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text font-bold'>Outils utilisés</h3>
+                        <h3 className='text-3xl text-primary font-bold'>Outils utilisés</h3>
                         <div className='flex gap-32 items-start'>
 
                             <div className='flex flex-col gap-10 justify-center items-start'>
-                                <h4 className='text-2xl font-bold text-secondary'>Maquetting</h4>
+                                <h4 className='text-2xl font-bold bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text'>Maquetting</h4>
                                 <div className='flex flex-col text-4xl gap-1'>
 
                                     <div className='text-xl flex gap-5 items-center text-primary'>
@@ -57,7 +57,7 @@ const index = ({ titre, img, desc, maquettingTitre, devTitre, hebergementTitre }
                             </div>
 
                             <div className='flex flex-col gap-10 justify-center items-start'>
-                                <h4 className='text-2xl font-bold text-secondary'>Développement</h4>
+                                <h4 className='text-2xl font-bold bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text'>Développement</h4>
                                 <div className='flex flex-col text-4xl text-primary'>
                                     <div className='flex flex-col gap-10'>
                                         <div className='text-xl flex gap-5 items-center text-primary'>
@@ -69,7 +69,7 @@ const index = ({ titre, img, desc, maquettingTitre, devTitre, hebergementTitre }
                             </div>
 
                             <div className='flex flex-col gap-10 justify-center items-center'>
-                                <h4 className='text-2xl font-bold text-secondary'>Hébergement</h4>
+                                <h4 className='text-2xl font-bold bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text'>Hébergement</h4>
                                 <div className='flex flex-col text-4xl gap-10 text-primary'>
                                     <div className='text-xl flex gap-5 items-center'>
                                         <IoLogoVercel className='text-4xl' />
