@@ -34,12 +34,12 @@ const index = ({ titre, img, desc, maquettingTitre, devTitre, hebergementTitre }
                         <a href="https://github.com/MehdiDiasGomes/PixelArt" target='_blank' className='text-primary md:text-xl border-2 border-primary p-5 flex items-center justify-center hover:text-black hover:bg-primary duration-300 font-bold sm:text-paragMobile'>Code source</a>
                     </div>
 
-                    <div className='flex flex-col gap-10'>
+                    <div className='flex flex-col gap-7'>
                         <h3 className='text-3xl text-primary font-bold'>Description du projet</h3>
                         <p className='text-secondary text-xl text-justify'>{desc}</p>
                     </div>
 
-                    <div className='flex flex-col gap-10'>
+                    <div className='flex flex-col gap-7'>
 
                         <h3 className='text-3xl text-primary font-bold'>Outils utilisés</h3>
                         <div className='flex gap-32 items-start'>
