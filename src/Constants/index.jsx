@@ -2,11 +2,17 @@
 import PixelArt from "../Assets/img/Projets/pixelArt.png"
 import ToDoList from "../Assets/img/Projets/toDoList.png"
 import Devinette from "../Assets/img/Projets/devinette.png"
-
 import Briquerie from "../Assets/img/Educ/laBriquerie.png"
 import JM from "../Assets/img/Educ/jeanMoulin.png"
-
 import PixelArtPic from '../Assets/img/Projets/Rectangle1.png'
+
+//Logo
+import { FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { FaCss3 } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { IoLogoVercel } from "react-icons/io5";
+import { FaArrowLeft } from "react-icons/fa";
 
 export const xpConst = [
     {
@@ -82,28 +88,11 @@ export const ProjetsContenuConst = [
         titre: 'Pixel Art',
         img: PixelArtPic,
         desc: "Ce projet implique la création d'une interface permettant à l'utilisateur de créer une grille de dimensions personnalisées (jusqu'à un maximum de 20 par 20). Ensuite, il pourra réaliser des œuvres de pixel art en utilisant une palette de couleurs proposée directement sur le site.",
+        logoMaq: <FaFigma />,
+        logoDev: <FaReact />,
+        logoHeb: <IoLogoVercel />,
         maquettingTitre: 'Figma',
         devTitre: 'React.js',
         hebergementTitre: 'Vercel',
     },
-
-    //ToDoList
-    // {
-    //     titre: '',
-    //     img: '',
-    //     desc: '',
-    //     maquettingTitre: '',
-    //     devTitre: '',
-    //     hebergementTitre: '',
-    // },
-
-    //Devinette
-    // {
-    //     titre: '',
-    //     img: '',
-    //     desc: '',
-    //     maquettingTitre: '',
-    //     devTitre: '',
-    //     hebergementTitre: '',
-    // },
 ]

@@ -14,7 +14,12 @@ const Experiences = () => {
             <div className="flex flex-col gap-20 sm:px-10 md:px-16 lg:px-44">
                 <Fade left>
                     {EducationConst.map((e, index) => (
-                        <EducComp key={index} img={e.img} titre={e.titre} date={e.date} parag={e.parag} />
+                        <EducComp
+                            key={index}
+                            img={e.img}
+                            titre={e.titre}
+                            date={e.date}
+                            parag={e.parag} />
                     ))}
                 </Fade>
             </div>

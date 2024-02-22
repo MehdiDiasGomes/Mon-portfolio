@@ -11,7 +11,11 @@ const Projets = () => {
                 <div className="flex flex-wrap justify-center gap-10 w-9/12 md:w-full">
 
                     {projetsConst.map((e, index) => (
-                        <ProjetComp key={index} img={e.img} titre={e.titre} lien={e.lien} />
+                        <ProjetComp
+                            key={index}
+                            img={e.img}
+                            titre={e.titre}
+                            lien={e.lien} />
                     ))}
 
                 </div>

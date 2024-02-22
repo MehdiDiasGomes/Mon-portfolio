@@ -8,7 +8,7 @@ import { IoLogoVercel } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from "react-icons/fa";
 
-const index = ({ titre, img, desc, maquettingTitre, devTitre, hebergementTitre }) => {
+const index = ({ titre, img, desc, logoMaq, logoDev, logoHeb, maquettingTitre, devTitre, hebergementTitre }) => {
     return (
         <div className="flex justify-center">
 
@@ -49,7 +49,7 @@ const index = ({ titre, img, desc, maquettingTitre, devTitre, hebergementTitre }
                                 <div className='flex flex-col text-4xl gap-1'>
 
                                     <div className='text-xl flex gap-5 items-center text-primary'>
-                                        <FaFigma className='text-4xl' />
+                                        <span className='text-4xl'>{logoMaq}</span>
                                         <span>{maquettingTitre}</span>
                                     </div>
 
@@ -61,7 +61,7 @@ const index = ({ titre, img, desc, maquettingTitre, devTitre, hebergementTitre }
                                 <div className='flex flex-col text-4xl text-primary'>
                                     <div className='flex flex-col gap-10'>
                                         <div className='text-xl flex gap-5 items-center text-primary'>
-                                            <FaReact className='text-4xl' />
+                                            <span className='text-4xl'>{logoDev}</span>
                                             <span>{devTitre}</span>
                                         </div>
                                     </div>
@@ -72,7 +72,7 @@ const index = ({ titre, img, desc, maquettingTitre, devTitre, hebergementTitre }
                                 <h4 className='text-2xl font-bold bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text'>Hébergement</h4>
                                 <div className='flex flex-col text-4xl gap-10 text-primary'>
                                     <div className='text-xl flex gap-5 items-center'>
-                                        <IoLogoVercel className='text-4xl' />
+                                        <span className='text-4xl'>{logoHeb}</span>
                                         <span>{hebergementTitre}</span>
                                     </div>
                                 </div>

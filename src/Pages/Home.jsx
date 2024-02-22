@@ -23,7 +23,10 @@ const Home = () => {
                     </div>
                     <div className="flex md:gap-8 sm:gap-4">
                         {LienConst.map((e, index) => (
-                            <SocialComp key={index} lien={e.lien} icon={e.icon} />
+                            <SocialComp
+                                key={index}
+                                lien={e.lien}
+                                icon={e.icon} />
                         ))}
                     </div>
                 </div>

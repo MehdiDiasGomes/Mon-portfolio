@@ -9,7 +9,9 @@ const Xp = () => {
                 <h3 className='text-2xl text-secondary font-bold'>EXPÉRIENCE AVEC</h3>
                 <div className="flex gap-20 sm:flex-wrap sm:justify-center sm:items-center">
                     {xpConst.map((e, index) => (
-                        <Exp key={index} icon={e.icon} />
+                        <Exp
+                            key={index}
+                            icon={e.icon} />
                     ))}
                 </div>
 
