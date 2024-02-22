@@ -47,19 +47,19 @@ export const projetsConst = [
 export const EducationConst = [
     {
         img: Briquerie,
-        titre: 'BAC+2 à LPO La Briquerie (SNIR)',
+        titre: 'LPO La Briquerie',
         date: '2021-2023',
         parag: "Obtention de mon BTS Systèmes Numériques Informatiques & Réseaux"
     },
     {
         img: Briquerie,
-        titre: 'BAC Professionnel à LPO La Briquerie (SN)',
+        titre: 'LPO La Briquerie',
         date: '2018-2021',
         parag: "Obtention de mon BAC Systèmes Numériques"
     },
     {
         img: JM,
-        titre: 'Brevet des collèges au Collège Jean Moulin',
+        titre: 'Collège Jean Moulin',
         date: '2014-2018',
         parag: "Obtention de mon brevet des collèges"
     },
