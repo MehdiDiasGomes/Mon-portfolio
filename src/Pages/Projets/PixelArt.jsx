@@ -15,7 +15,6 @@ const PixelArt = () => {
           devTitre={e.devTitre}
           hebergementTitre={e.hebergementTitre}
           logoMaq={e.logoMaq}
-          l
           logoDev={e.logoDev}
           logoHeb={e.logoHeb}
         />
