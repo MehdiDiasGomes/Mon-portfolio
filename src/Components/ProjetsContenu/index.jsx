@@ -57,7 +57,7 @@ const index = ({
 
           <div className="flex flex-col gap-7">
             <h3 className="md:text-3xl sm:text-[1rem] text-primary font-bold">Outils utilisés</h3>
-            <div className="flex md:gap-32 sm:gap-16 md:gap-20 items-start flex-wrap">
+            <div className="flex md:gap-20 sm:gap-16 xl:gap-32 items-start flex-wrap">
               <div className="flex flex-col gap-10 justify-center items-start">
                 <h4 className="md:text-2xl sm:text-[1rem] font-bold bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text">
                   Maquetting
