@@ -1,46 +1,38 @@
+import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
-import Navbar from './Layout/Navbar'
-import PagePrincipal from './Pages/PagePrincipal';
+import ScrollToTop from './Components/ScrollToTop'
 import Footer from './Layout/Footer'
-import PixelArt from './Pages/Projets/PixelArt'
-import Devinette from './Pages/Projets/Devinette';
-import ToDoList from './Pages/Projets/ToDoList';
-import { Routes, Route, useLocation } from 'react-router-dom';
-import ScrollToTop from './Components/ScrollToTop';
+import Navbar from './Layout/Navbar'
+import PagePrincipal from './Pages/PagePrincipal'
+
+import { routes } from './Constants'
 
 function App() {
-
-  const location = useLocation();
-
-  const isPixelArtPage = location.pathname === '/pixelart';
+  const location = useLocation()
 
   return (
     <div className="app flex flex-col gap-10">
-
       <ScrollToTop />
 
-      {!isPixelArtPage && (
-        <div className="navbar">
-          <Navbar />
-        </div>
-      )}
+      <div className="navbar">
+        <Navbar />
+      </div>
 
       {/* PAGES */}
       <Routes>
-        <Route path='/' element={<PagePrincipal />} />
-        <Route path='/pixelart' element={<PixelArt />} />
-        <Route path='/devinette' element={<Devinette />} />
-        <Route path='/todolist' element={<ToDoList />} />
+        <Route path="/" element={<PagePrincipal />} />
+
+        {routes.map((route, index) => (
+          <Route key={index} path={route.slug} element={route.page} />
+        ))}
       </Routes>
 
       {/* FOOTER */}
       <div className="footer">
         <Footer />
       </div>
-
     </div>
   )
 }
 
-export default App;
-
+export default App

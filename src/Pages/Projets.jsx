@@ -1,6 +1,6 @@
-import { projetsConst } from "../Constants/index";
-import ProjetComp from "../Components/Projets";
-import Zoom from "react-reveal/Zoom";
+import { ProjetCarte } from '../Constants/index'
+import ProjetComp from '../Components/Projets'
+import Zoom from 'react-reveal/Zoom'
 
 const Projets = () => {
   return (
@@ -14,13 +14,13 @@ const Projets = () => {
         </h2>
 
         <div className="flex flex-wrap justify-center gap-10 w-9/12 md:w-full">
-          {projetsConst.map((e, index) => (
+          {ProjetCarte.map((e, index) => (
             <ProjetComp key={index} img={e.img} titre={e.titre} lien={e.lien} />
           ))}
         </div>
       </div>
     </Zoom>
-  );
-};
+  )
+}
 
-export default Projets;
+export default Projets

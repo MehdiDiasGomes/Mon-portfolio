@@ -1,26 +1,21 @@
-import React from "react";
-import ProjetsContenuComp from "../../Components/ProjetsContenu/index";
-import { ProjetsContenuConst } from "../../Constants";
+import React from 'react'
+import ProjetsTemplate from '../../Components/ProjetsContenu/index'
 
-const PixelArt = () => {
+const PixelArt = ({ data }) => {
   return (
-    <div>
-      {ProjetsContenuConst.map((e, index) => (
-        <ProjetsContenuComp
-          key={index}
-          titre={e.titre}
-          img={e.img}
-          desc={e.desc}
-          maquettingTitre={e.maquettingTitre}
-          devTitre={e.devTitre}
-          hebergementTitre={e.hebergementTitre}
-          logoMaq={e.logoMaq}
-          logoDev={e.logoDev}
-          logoHeb={e.logoHeb}
-        />
-      ))}
-    </div>
-  );
-};
+    <ProjetsTemplate
+      key={data.titre}
+      titre={data.titre}
+      img={data.img}
+      desc={data.desc}
+      maquettingTitre={data.maquettingTitre}
+      devTitre={data.devTitre}
+      hebergementTitre={data.hebergementTitre}
+      logoMaq={data.logoMaq}
+      logoDev={data.logoDev}
+      logoHeb={data.logoHeb}
+    />
+  )
+}
 
-export default PixelArt;
+export default PixelArt

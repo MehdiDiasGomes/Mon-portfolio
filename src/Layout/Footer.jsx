@@ -1,7 +1,7 @@
-import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { MdOutlineMailOutline } from "react-icons/md";
+import React from 'react'
+import { FaGithub } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { MdOutlineMailOutline } from 'react-icons/md'
 
 const Footer = () => {
   return (
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

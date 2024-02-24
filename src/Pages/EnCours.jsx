@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Zoom from "react-reveal/Zoom";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Zoom from 'react-reveal/Zoom'
 
 const EnCours = () => {
   return (
@@ -19,7 +19,7 @@ const EnCours = () => {
         </div>
       </div>
     </Zoom>
-  );
-};
+  )
+}
 
-export default EnCours;
+export default EnCours

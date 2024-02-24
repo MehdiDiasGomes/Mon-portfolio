@@ -1,18 +1,23 @@
-import React, { useState } from "react";
-import Logo from "../Assets/img/Logo.png";
+import React, { useState } from 'react'
+import Logo from '../Assets/img/Logo.png'
+import { useLocation } from 'react-router-dom'
+import { routes } from '../Constants'
 
 const Navbar = () => {
-  const [showNav, setShowNav] = useState(false);
+  const location = useLocation()
+  const [showNav, setShowNav] = useState(false)
+
+  if (routes.find(route => route.slug === location.pathname)) return
 
   const handleShowNav = () => {
-    setShowNav(!showNav);
-  };
+    setShowNav(!showNav)
+  }
 
   return (
     <div>
       <nav
         className={` z-50 flex justify-around px-24 py-8 bg-[#191919] items-center duration-300 fixed w-full max-lg:flex-col max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:gap-16  ${
-          showNav ? "max-lg:right-[0]" : "max-lg:right-[-100%]"
+          showNav ? 'max-lg:right-[0]' : 'max-lg:right-[-100%]'
         }`}
       >
         <div className="w-10 max-lg:w-24">
@@ -61,12 +66,12 @@ const Navbar = () => {
       </nav>
       <div className="text-primary z-50 font-bold text-4xl fixed right-5 top-5 cursor-pointer lg:hidden">
         <i
-          className={`${showNav ? "ri-close-line" : "ri-menu-3-line"}`}
+          className={`${showNav ? 'ri-close-line' : 'ri-menu-3-line'}`}
           onClick={handleShowNav}
         ></i>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

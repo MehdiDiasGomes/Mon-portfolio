@@ -1,7 +1,7 @@
-import Home from "./Home";
-import Xp from "./Xp";
-import Projets from "./Projets";
-import Education from "./Education";
+import Home from './Home'
+import Xp from './Xp'
+import Projets from './Projets'
+import Education from './Education'
 
 const PagePrincipal = () => {
   return (
@@ -16,7 +16,7 @@ const PagePrincipal = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PagePrincipal;
+export default PagePrincipal

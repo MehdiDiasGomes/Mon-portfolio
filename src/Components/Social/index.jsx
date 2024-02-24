@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export default function index({ icon, lien }) {
   return (
@@ -11,5 +11,5 @@ export default function index({ icon, lien }) {
         <i class={icon}></i>
       </a>
     </div>
-  );
+  )
 }

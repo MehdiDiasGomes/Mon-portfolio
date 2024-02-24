@@ -1,9 +1,9 @@
-import React from "react";
-import Mehdi from "../Assets/img/Mehdi.jpg";
-import monCV from "../Assets/doc/CV_Mehdi_DIAS_GOMES.pdf";
-import { LienConst } from "../Constants";
-import SocialComp from "../Components/Social";
-import Zoom from "react-reveal/Zoom";
+import React from 'react'
+import Mehdi from '../Assets/img/Mehdi.jpg'
+import monCV from '../Assets/doc/CV_Mehdi_DIAS_GOMES.pdf'
+import { LienConst } from '../Constants'
+import SocialComp from '../Components/Social'
+import Zoom from 'react-reveal/Zoom'
 
 const Home = () => {
   return (
@@ -19,20 +19,20 @@ const Home = () => {
             <h1 className="md:text-5xl sm:text-3xl text-white font-bold text-center">
               Mehdi <br />
               <span className="bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text block mt-2">
-                {" "}
+                {' '}
                 DIAS GOMES
               </span>
             </h1>
             <p className="pcScreen:px-64 md:text-xl sm:text-paragMobile sm:px-10 text-parag text-secondary text-center">
-              Je suis un apprenti développeur web full-stack de{" "}
+              Je suis un apprenti développeur web full-stack de{' '}
               <span className="font-bold text-primary">20 ans</span>, à la
-              recherche d&apos;un{" "}
+              recherche d&apos;un{' '}
               <span className="font-bold text-primary">
                 contrat en alternance
-              </span>{" "}
-              pour préparer un{" "}
+              </span>{' '}
+              pour préparer un{' '}
               <span className="font-bold text-primary">Bac+3</span> à Metz
-              Numeric School pour l&apos;année{" "}
+              Numeric School pour l&apos;année{' '}
               <span className="font-bold text-primary">2024-2025</span>. Mon
               objectif est d&apos;acquérir des compétences dans le développement
               web et de contribuer de manière proactive à des projets
@@ -62,7 +62,7 @@ const Home = () => {
         </div>
       </div>
     </Zoom>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

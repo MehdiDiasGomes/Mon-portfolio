@@ -1,12 +1,6 @@
-import React from "react";
-import PixelArtPic from "../../Assets/img/Projets/pixelArt.png";
-import { FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
-import { FaCss3 } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
-import { IoLogoVercel } from "react-icons/io5";
-import { Link } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { FaArrowLeft } from 'react-icons/fa'
 
 const index = ({
   titre,
@@ -89,7 +83,7 @@ const index = ({
                 </div>
               </div>
 
-              <div className="flex flex-col gap-10 justify-center items-center">
+              <div className="flex flex-col gap-10 justify-center items-start">
                 <h4 className="text-2xl font-bold bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text">
                   Hébergement
                 </h4>
@@ -105,7 +99,7 @@ const index = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default index;
+export default index

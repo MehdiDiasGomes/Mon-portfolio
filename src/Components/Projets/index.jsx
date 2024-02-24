@@ -1,5 +1,5 @@
-import { GoArrowUpRight } from "react-icons/go";
-import { Link } from "react-router-dom";
+import { GoArrowUpRight } from 'react-icons/go'
+import { Link } from 'react-router-dom'
 
 const index = ({ img, titre, lien }) => {
   return (
@@ -16,7 +16,7 @@ const index = ({ img, titre, lien }) => {
         <GoArrowUpRight className="text-2xl" />
       </div>
     </Link>
-  );
-};
+  )
+}
 
-export default index;
+export default index

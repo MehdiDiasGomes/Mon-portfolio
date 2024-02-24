@@ -1,7 +1,7 @@
-import React from "react";
-import { EducationConst } from "../Constants";
-import EducComp from "../Components/Educ";
-import Fade from "react-reveal/Fade";
+import React from 'react'
+import Fade from 'react-reveal/Fade'
+import EducComp from '../Components/Educ'
+import { EducationConst } from '../Constants'
 
 const Experiences = () => {
   return (
@@ -26,7 +26,7 @@ const Experiences = () => {
         </Fade>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Experiences;
+export default Experiences

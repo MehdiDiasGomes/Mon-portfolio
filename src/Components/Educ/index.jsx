@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const index = ({ img, titre, date, parag }) => {
   return (
@@ -18,7 +18,7 @@ const index = ({ img, titre, date, parag }) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default index;
+export default index

@@ -1,6 +1,6 @@
-import Exp from "../Components/Exp";
-import { xpConst } from "../Constants";
-import Zoom from "react-reveal/Zoom";
+import Exp from '../Components/Exp'
+import { xpConst } from '../Constants'
+import Zoom from 'react-reveal/Zoom'
 
 const Xp = () => {
   return (
@@ -14,7 +14,7 @@ const Xp = () => {
         </div>
       </div>
     </Zoom>
-  );
-};
+  )
+}
 
-export default Xp;
+export default Xp
