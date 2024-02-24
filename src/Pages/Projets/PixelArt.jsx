@@ -14,6 +14,8 @@ const PixelArt = ({ data }) => {
       logoMaq={data.logoMaq}
       logoDev={data.logoDev}
       logoHeb={data.logoHeb}
+      lienOuvrir={data.lienOuvrir}
+      lienCode={data.lienCode}
     />
   )
 }
