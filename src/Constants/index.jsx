@@ -105,7 +105,7 @@ export const ProjetPages = {
   todolist: {
     titre: 'To Do List',
     img: ToDoListBanner,
-    desc: "Ce projet implique la création d'une interface permettant à l'utilisateur de créer une grille de dimensions personnalisées (jusqu'à un maximum de 20 par 20). Ensuite, il pourra réaliser des œuvres de pixel art en utilisant une palette de couleurs proposée directement sur le site.",
+    desc: "Ce projet se concentre sur le développement d'une plateforme intuitive permettant à l'utilisateur de composer des listes de tâches personnalisées selon ses besoins. Avec une interface fluide et adaptable, l'utilisateur pourra créer, organiser et suivre ses différentes tâches avec facilité.",
     logoMaq: <FaFigma />,
     logoDev: <FaReact />,
     logoHeb: <IoLogoVercel />,
@@ -120,7 +120,7 @@ export const ProjetPages = {
   devinette: {
     titre: 'Jeu de devinette',
     img: devinetteBanner,
-    desc: 'sdfsdfsdfsdf',
+    desc: "Ce projet s'articule autour de la conception d'un jeu de devinette captivant, offrant aux joueurs une expérience ludique et stimulante. À travers une interface interactive, les participants seront invités à résoudre une série de mystères et d'énigmes intrigantes.",
     logoMaq: <FaFigma />,
     logoDev: <FaReact />,
     logoHeb: <IoLogoVercel />,
