@@ -14,7 +14,7 @@ const Home = () => {
             <img
               src={Mehdi}
               alt="Logo du site"
-              className="w-44 h-44 object-cover rounded-full"
+              className="md:w-44 md:h-44 sm:w-32 sm:h-32 object-cover rounded-full"
             />
             <h1 className="md:text-5xl sm:text-3xl text-white font-bold text-center">
               Mehdi <br />
