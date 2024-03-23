@@ -4,9 +4,11 @@ import Briquerie from '../Assets/img/Educ/laBriquerie.png'
 import PixelArtBanner from '../Assets/img/Projets/PixelArtBanner.png'
 import ToDoListBanner from '../Assets/img/Projets/toDoListBanner.png'
 import devinetteBanner from '../Assets/img/Projets/devinetteBanner.png'
+import pokedexBanner from '../Assets/img/Projets/PokedexBanner.png'
 import DevinetteImg from '../Assets/img/Projets/devinetteCarte.png'
 import PixelArtImg from '../Assets/img/Projets/pixelArtCarte.png'
 import ToDoListImg from '../Assets/img/Projets/toDoListCarte.png'
+import PokedexImg from '../Assets/img/Projets/PokedexCarte.png'
 
 //Logo
 import { FaFigma, FaReact } from 'react-icons/fa'
@@ -45,11 +47,11 @@ export const ProjetCarte = [
     titre: 'ToDoList en ligne',
     lien: '/todolist',
   },
-  //Devinette
+  //Pokedex
   {
-    img: DevinetteImg,
-    titre: 'Jeu de devinette',
-    lien: '/devinette',
+    img: PokedexImg,
+    titre: 'Pokedex',
+    lien: '/pokedex',
   },
 ]
 
@@ -118,14 +120,14 @@ export const ProjetPages = {
 
   //Devinette
   devinette: {
-    titre: 'Jeu de devinette',
-    img: devinetteBanner,
-    desc: "Ce projet s'articule autour de la conception d'un jeu de devinette captivant, offrant aux joueurs une expérience ludique et stimulante. À travers une interface interactive, les participants seront invités à résoudre une série de mystères et d'énigmes intrigantes.",
+    titre: 'Pokédex',
+    img: pokedexBanner,
+    desc: "Ce projet se présente comme une base de données de type Pokédex, rassemblant une vaste sélection de Pokémon ainsi que leurs statistiques.",
     logoMaq: <FaFigma />,
     logoDev: <FaReact />,
     logoHeb: <IoLogoVercel />,
-    lienOuvrir: 'https://mehdidiasgomes.github.io/Jeu-de-devinette/',
-    lienCode: 'https://github.com/MehdiDiasGomes/Jeu-de-devinette',
+    lienOuvrir: 'https://pokedex-gules-chi.vercel.app/',
+    lienCode: 'https://github.com/MehdiDiasGomes/Pokedex',
     maquettingTitre: 'Figma',
     devTitre: 'React.js',
     hebergementTitre: 'Vercel',
@@ -142,7 +144,7 @@ export const routes = [
     page: <ToDoList data={ProjetPages.todolist} />,
   },
   {
-    slug: '/devinette',
+    slug: '/pokedex',
     page: <Devinette data={ProjetPages.devinette} />,
   },
 ]
