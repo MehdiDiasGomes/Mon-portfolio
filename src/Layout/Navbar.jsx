@@ -59,9 +59,9 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <div className="text-primary z-50 font-bold text-4xl fixed right-5 top-5 cursor-pointer lg:hidden">
+      <div className="text-primary z-50 text-3xl fixed right-5 top-5 cursor-pointer lg:hidden">
         <i
-          className={`${showNav ? 'ri-close-line' : 'ri-menu-3-line'}`}
+          className={`${showNav ? 'ri-close-line' : 'ri-menu-line'}`}
           onClick={handleShowNav}></i>
       </div>
     </div>
