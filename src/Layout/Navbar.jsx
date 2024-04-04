@@ -17,7 +17,7 @@ const Navbar = () => {
     <div>
       <nav
         className={` z-50 flex justify-around px-24 py-8 bg-[#191919] items-center duration-300 fixed w-full max-lg:flex-col max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:gap-16  ${
-          showNav ? 'max-lg:right-[0]' : 'max-lg:right-[-100%]'
+          showNav ? 'max-lg:top-[0]' : 'max-lg:top-[-100%]'
         }`}>
         <div className="w-10 max-lg:w-24">
           <a href="#">
