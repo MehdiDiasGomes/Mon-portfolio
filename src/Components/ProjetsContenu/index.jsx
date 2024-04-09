@@ -27,7 +27,7 @@ const index = ({
         </div>
 
         <div className="flex gap-10 justify-center items-center">
-          <img className="w-[50rem] md:w-[90%] sm:w-[90%]" src={img} alt={titre} />
+          <img className="w-[50rem] md:w-[90%] sm:w-[90%] rounded-3xl" src={img} alt={titre} />
         </div>
 
         <div className="flex flex-col gap-16 justify-center items-start px-16">
@@ -35,14 +35,14 @@ const index = ({
             <a
               href={lienOuvrir}
               target="_blank"
-              className="bg-primary md:text-xl text-black p-5 flex justify-center items-center hover:bg-[#ffffffec] font-bold sm:text-paragMobile"
+              className="bg-primary rounded-3xl md:text-xl text-black p-5 flex justify-center items-center hover:bg-[#ffffffec] font-bold sm:text-paragMobile"
             >
               Ouvrir
             </a>
             <a
               href={lienCode}
               target="_blank"
-              className="text-primary md:text-xl border-2 border-primary p-5 flex items-center justify-center hover:text-black hover:bg-primary duration-300 font-bold sm:text-paragMobile"
+              className="text-primary rounded-3xl md:text-xl border-2 border-primary p-5 flex items-center justify-center hover:text-black hover:bg-primary duration-300 font-bold sm:text-paragMobile"
             >
               Code source
             </a>
