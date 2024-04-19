@@ -9,7 +9,7 @@ const Footer = () => {
       className="flex justify-center items-center py-20 bg-[#191919]"
       id="contact"
     >
-      <div className="flex flex-col sm:px-10 md:px-14 pcScreen:w-9/12 md:w-full sm:w-full xl:w-[70%] lg:w-9/12 gap-10">
+      <div className="flex flex-col sm:px-10 md:px-14 pcScreen:w-9/12 pcScreen:px-44 md:w-full sm:w-full xl:w-[70%] lg:w-9/12 gap-10">
         <div>
           <h3 className="text-primary text-4xl font-bold">Contact</h3>
         </div>
