@@ -3,6 +3,7 @@ import Xp from './Xp'
 import Projets from './Projets'
 import Education from './Education'
 
+
 const PagePrincipal = () => {
   return (
     <div>

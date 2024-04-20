@@ -17,17 +17,17 @@ const Navbar = () => {
           </a>
         </div>
         <ul className="flex text-[1rem] items-center justify-center gap-4 text-xl text-white">
-          <li className='sm:hidden md:block'>
+          <li className="sm:hidden md:block">
             <a
               href="#projets"
-              className="px-3 py-2 rounded-md duration-300 hover:bg-[#B045DE] ">
+              className="px-3 py-2 rounded-md duration-200 hover:bg-[#B045DE]">
               Projets
             </a>
           </li>
           <li>
             <a
               href="#contact"
-              className="px-3 py-2 bg-[#B045DE] rounded-md duration-300 hover:bg-[#b045deb6] ">
+              className="px-3 py-2 bg-[#B045DE] rounded-md duration-200 hover:bg-[#b045deb6]">
               Contact
             </a>
           </li>
