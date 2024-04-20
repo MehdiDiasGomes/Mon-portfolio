@@ -122,7 +122,7 @@ export const ProjetPages = {
   devinette: {
     titre: 'Pokédex',
     img: pokedexBanner,
-    desc: "Ce projet se présente comme une base de données de type Pokédex, rassemblant une vaste sélection de Pokémon ainsi que leurs statistiques.",
+    desc: 'Ce projet se présente comme une base de données de type Pokédex, rassemblant une vaste sélection de Pokémon ainsi que leurs statistiques.',
     logoMaq: <FaFigma />,
     logoDev: <FaReact />,
     logoHeb: <IoLogoVercel />,

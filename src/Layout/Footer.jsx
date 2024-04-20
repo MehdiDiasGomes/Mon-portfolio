@@ -16,7 +16,7 @@ const Footer = () => {
         <div>
           <p className="text-secondary md:text-parag sm:text-paragMobile">
             Je suis un jeune développeur web full-stack âgé de 20 ans, à la
-            recherche d&apos;une opportunité de contrat en alternance afin de
+            recherche d&apos;une opportunité de contrat en apprentissage afin de
             préparer un Bac+3 à Metz Numeric School pour l&apos;année académique
             2024-2025.
           </p>
