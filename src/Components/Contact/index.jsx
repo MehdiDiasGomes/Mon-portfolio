@@ -35,6 +35,10 @@ export default function Index() {
       )
   }
 
+  const handleInputChange = e => {
+    e.target.value = e.target.value.toUpperCase()
+  }
+
   return (
     <div id="contact">
       <Fade>
@@ -55,9 +59,10 @@ export default function Index() {
                 <label className="block mb-2 text-sm font-medium text-primary">
                   Nom
                 </label>
-                <input                 
+                <input
                   id="nom"
                   name="nom"
+                  onInput={handleInputChange}
                   className="shadow-sm bg-[#1e1e1e] border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                   placeholder="Votre nom"
                 />

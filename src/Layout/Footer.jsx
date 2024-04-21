@@ -1,52 +1,41 @@
 import React from 'react'
-import { FaGithub } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
-import { MdOutlineMailOutline } from 'react-icons/md'
+import { Link } from 'react-router-dom'
+import Logo from '../Assets/img/Logo.png'
 
 const Footer = () => {
   return (
-    <div
-      className="flex justify-center items-center py-20 border-t border-dashed"
-    >
-      <div className="flex flex-col sm:px-10 md:px-14 pcScreen:w-9/12 pcScreen:px-44 md:w-full sm:w-full xl:w-[70%] lg:w-9/12 gap-10">
-        <div>
-          <h3 className="text-primary text-4xl font-bold">Contact</h3>
-        </div>
-        <div>
-          <p className="text-secondary md:text-parag sm:text-paragMobile">
-            Je suis un jeune développeur web full-stack âgé de 20 ans, à la
-            recherche d&apos;une opportunité de contrat en apprentissage afin de
-            préparer un Bac+3 à Metz Numeric School pour l&apos;année académique
-            2024-2025.
-          </p>
-        </div>
-        <div>
+    <footer class="bg-[#191919] rounded-lg shadow m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:flex-col md:flex-row sm:justify-between">
           <a
-            className="text-primary md:text-parag sm:text-paragMobile flex items-center gap-1"
-            href="mailto:diasgomes.mehdicours@gmail.com"
-          >
-            <MdOutlineMailOutline />
-            diasgomes.mehdicours@gmail.com
+            href="https://flowbite.com/"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <img
+              src={Logo}
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              DIAS GOMES Mehdi
+            </span>
           </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <li>
+              <a href="#contact" class="hover:underline">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
-        <div className="flex gap-7">
-          <a
-            className="text-primary text-3xl"
-            href="https://github.com/MehdiDiasGomes"
-            target="blank"
-          >
-            <FaGithub />
+        <hr class="my-6 border-secondary sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2023{' '}
+          <a href="#" class="hover:underline">
+            Mehdi DIAS GOMES™
           </a>
-          <a
-            className="text-primary text-3xl"
-            href="https://www.linkedin.com/in/mehdi-dias-gomes-056654239"
-            target="blank"
-          >
-            <FaLinkedin />
-          </a>
-        </div>
+        </span>
       </div>
-    </div>
+    </footer>
   )
 }
 

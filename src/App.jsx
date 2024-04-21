@@ -9,7 +9,6 @@ import ScrollToTopButton from './Components/ScrollToTopButton'
 import { routes } from './Constants'
 
 function App() {
-  const location = useLocation()
 
   return (
     <>
