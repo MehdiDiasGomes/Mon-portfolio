@@ -26,7 +26,7 @@ export default function ScrollToTopButton() {
 
   return (
     <div>
-        {backToTop && (
+      {backToTop && (
         <Fade>
           <button
             className="p-5 bg-[#191919] hover:bg-[#242424] duration-100 flex justify-center items-center rounded-xl fixed bottom-10 right-10"
@@ -34,7 +34,7 @@ export default function ScrollToTopButton() {
             <FaArrowUp className="text-white" />
           </button>
         </Fade>
-        )}
-      </div>
+      )}
+    </div>
   )
 }

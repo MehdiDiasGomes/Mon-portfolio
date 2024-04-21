@@ -2,7 +2,7 @@ import Home from './Home'
 import Xp from './Xp'
 import Projets from './Projets'
 import Education from './Education'
-
+import Contact from '../Components/Contact'
 
 const PagePrincipal = () => {
   return (
@@ -14,6 +14,7 @@ const PagePrincipal = () => {
           <Xp />
           <Projets />
           <Education />
+          <Contact />
         </div>
       </div>
     </div>
