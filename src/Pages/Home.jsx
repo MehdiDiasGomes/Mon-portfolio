@@ -3,11 +3,11 @@ import Mehdi from '../Assets/img/Mehdi.jpg'
 import monCV from '../Assets/doc/CV_Mehdi_DIAS_GOMES.pdf'
 import { LienConst } from '../Constants'
 import SocialComp from '../Components/Social'
-import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
 
 const Home = () => {
   return (
-    <Zoom>
+    <Fade>
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col gap-12 justify-center items-center">
           <div className="flex flex-col gap-12 items-center">
@@ -59,7 +59,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </Zoom>
+    </Fade>
   )
 }
 

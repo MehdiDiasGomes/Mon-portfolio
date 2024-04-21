@@ -1,10 +1,10 @@
 import { ProjetCarte } from '../Constants/index'
 import ProjetComp from '../Components/Projets'
-import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
 
 const Projets = () => {
   return (
-    <Zoom>
+    <Fade>
       <div
         className="flex flex-col items-center justify-center gap-20"
         id="projets">
@@ -22,7 +22,7 @@ const Projets = () => {
           ))}
         </div>
       </div>
-    </Zoom>
+    </Fade>
   )
 }
 

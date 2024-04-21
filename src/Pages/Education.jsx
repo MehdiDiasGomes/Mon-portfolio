@@ -17,7 +17,7 @@ const Experiences = () => {
       </div>
 
       <div className="flex flex-col gap-20 sm:px-10 md:px-16 lg:px-44">
-        <Fade left>
+        <Fade>
           {EducationConst.map((e, index) => (
             <EducComp
               key={index}
