@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { FaArrowUp } from 'react-icons/fa'
+import Fade from 'react-reveal/Fade'
 
 export default function ScrollToTopButton() {
   const [backToTop, setBackToTop] = useState(false)
@@ -25,13 +26,15 @@ export default function ScrollToTopButton() {
 
   return (
     <div>
-      {backToTop && (
-        <button
-          className="p-5 bg-[#191919] hover:bg-[#242424] duration-100 flex justify-center items-center rounded-xl fixed bottom-10 right-10"
-          onClick={scrollToTop}>
-          <FaArrowUp className='text-white' />
-        </button>
-      )}
-    </div>
+        {backToTop && (
+        <Fade>
+          <button
+            className="p-5 bg-[#191919] hover:bg-[#242424] duration-100 flex justify-center items-center rounded-xl fixed bottom-10 right-10"
+            onClick={scrollToTop}>
+            <FaArrowUp className="text-white" />
+          </button>
+        </Fade>
+        )}
+      </div>
   )
 }
