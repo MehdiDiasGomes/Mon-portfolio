@@ -1,7 +1,40 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Fade from 'react-reveal/Fade'
+import { Toaster, toast } from 'sonner'
+import emailjs from '@emailjs/browser'
 
 export default function Index() {
+  const form = useRef()
+  const sendEmail = e => {
+    e.preventDefault()
+
+    const email = form.current.mail.value
+    const nom = form.current.nom.value
+    const message = form.current.message.value
+
+    console.log(email, message)
+
+    if (!email || !message || !nom) {
+      toast.error('Veuillez renseigner tous les champs obligatoires !')
+      return
+    } else {
+      toast.success('Votre message a bien été envoyé.')
+    }
+
+    emailjs
+      .sendForm('service_t9lxowk', 'template_jxzugmp', form.current, {
+        publicKey: 'irlDoLoAtQUldFyRJ',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!')
+        },
+        error => {
+          console.log('FAILED...', error.text)
+        }
+      )
+  }
+
   return (
     <div id="contact">
       <Fade>
@@ -13,19 +46,32 @@ export default function Index() {
             <p className="mb-8 lg:mb-16 font-light text-center text-secondary sm:text-xl">
               Une question ? Un projet ? N'hésitez pas à me contacter !
             </p>
-            <form action="#" className="space-y-8">
+            <form
+              ref={form}
+              action="#"
+              className="space-y-8"
+              onSubmit={sendEmail}>
               <div>
-                <label
-                  htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-primary">
+                <label className="block mb-2 text-sm font-medium text-primary">
+                  Nom
+                </label>
+                <input                 
+                  id="nom"
+                  name="nom"
+                  className="shadow-sm bg-[#1e1e1e] border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                  placeholder="Votre nom"
+                />
+              </div>
+              <div>
+                <label className="block mb-2 text-sm font-medium text-primary">
                   Adresse mail
                 </label>
                 <input
                   type="email"
-                  id="email"
+                  id="mail"
+                  name="mail"
                   className="shadow-sm bg-[#1e1e1e] border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                   placeholder="votre@mail.com"
-                  required
                 />
               </div>
               <div>
@@ -39,7 +85,6 @@ export default function Index() {
                   id="subject"
                   className="block p-3 w-full text-sm text-primary bg-[#1e1e1e] rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                   placeholder="Dites-moi comment je peux vous aider"
-                  required
                 />
               </div>
               <div className="sm:col-span-2">
@@ -50,13 +95,16 @@ export default function Index() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="6"
                   className="block p-2.5 w-full text-sm text-primary bg-[#1e1e1e] rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
                   placeholder="Laissez un commentaire..."></textarea>
               </div>
+              <Toaster richColors />
               <button
                 type="submit"
-                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#7C3AED] sm:w-fit duration-200 hover:bg-[#7c3aede3] focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                onClick={sendEmail}
+                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#7C3AED] sm:w-fit duration-200 hover:bg-[#7c3aede3]">
                 Envoyer
               </button>
             </form>
