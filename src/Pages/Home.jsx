@@ -28,7 +28,7 @@ const Home = () => {
               <span className="font-bold text-primary">20 ans</span>, à la
               recherche d&apos;un{' '}
               <span className="font-bold text-primary">
-                contrat en alternance
+                contrat en apprentissage
               </span>{' '}
               pour préparer un{' '}
               <span className="font-bold text-primary">Bac+3</span> à Metz

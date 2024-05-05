@@ -15,7 +15,7 @@ export default function Index() {
     console.log(email, message)
 
     if (!email || !message || !nom) {
-      toast.error('Veuillez renseigner tous les champs obligatoires !')
+      toast.error('Veuillez renseigner les champs obligatoires !')
       return
     } else {
       toast.success('Votre message a bien été envoyé.')
@@ -105,7 +105,7 @@ export default function Index() {
                   className="block p-2.5 w-full text-sm text-primary bg-[#1E293B] rounded-lg shadow-sm   focus:ring-primary-500 focus:-primary-500"
                   placeholder="Laissez un commentaire..."></textarea>
               </div>
-              <Toaster richColors />
+              <Toaster />
               <button
                 type="submit"
                 onClick={sendEmail}
