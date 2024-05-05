@@ -39,20 +39,20 @@ const Home = () => {
               passionnants au sein d&apos;une équipe dynamique.
             </p>
           </div>
-          <div className="flex gap-7 text-primary">
+          <div className="flex gap-3 text-primary">
             <a
-              className="bg-primary rounded-3xl md:text-xl text-black p-5 flex justify-center items-center hover:bg-[#ffffffec] font-bold sm:text-paragMobile"
+              className="bg-primary rounded-3xl md:text-[1rem] text-black p-5 flex justify-center items-center hover:bg-[#ffffffec] font-semibold sm:text-paragMobile"
               href="mailto:diasgomes.mehdicours@gmail.com">
               Prenez contact
             </a>
             <a
-              className="text-primary rounded-3xl md:text-xl border-2 border-primary p-5 flex items-center justify-center hover:text-black hover:bg-primary duration-300 font-bold sm:text-paragMobile"
+              className="text-primary rounded-3xl md:text-[1rem] border-2 border-primary p-5 flex items-center justify-center hover:text-black hover:bg-primary duration-300 font-semibold sm:text-paragMobile"
               href={monCV}
               target="blank">
               Ouvrir mon CV
             </a>
           </div>
-          <div className="flex md:gap-8 sm:gap-4">
+          <div className="flex md:gap-3 sm:gap-4">
             {LienConst.map((e, index) => (
               <SocialComp key={index} lien={e.lien} icon={e.icon} />
             ))}

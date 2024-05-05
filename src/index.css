@@ -3,30 +3,42 @@
 @tailwind utilities;
 
 :root {
-    background-color: #161513;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+  /* background-color: #161513; */
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0c2531,
+    #111111
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0c2531,
+    #111111
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #121212;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgb(154,51,255);
-    opacity: 0.5;
-    transition: .3s;
-    border-radius: 0.5rem;
-  }
+  width: 0.5rem;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(153, 51, 255, 0.842);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    opacity: 1;
-  }
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0EA5E9;
+  opacity: 0.5;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea4e9a4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}

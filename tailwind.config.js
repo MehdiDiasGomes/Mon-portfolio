@@ -17,10 +17,10 @@ module.exports = {
       colors: {
         // Dégradé de couleurs
         gradientPrimary: {
-          DEFAULT: 'rgb(255,134,96)'
+          DEFAULT: '#0EA5E9'
         },
         gradientSecondary: {
-          DEFAULT: 'rgb(154,51,255)'
+          DEFAULT: '#0EA5E9'
         },
 
         //Couleurs principales

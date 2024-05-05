@@ -63,7 +63,7 @@ export default function Index() {
                   id="nom"
                   name="nom"
                   onInput={handleInputChange}
-                  className="shadow-sm bg-[#1e1e1e] border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                  className="shadow-sm bg-[#1E293B] text-primary text-sm rounded-lg focus:ring-primary-500 focus:-primary-500 block w-full p-2.5"
                   placeholder="Votre nom"
                 />
               </div>
@@ -75,7 +75,7 @@ export default function Index() {
                   type="email"
                   id="mail"
                   name="mail"
-                  className="shadow-sm bg-[#1e1e1e] border border-gray-300 text-primary text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                  className="shadow-sm bg-[#1E293B] text-primary text-sm rounded-lg focus:ring-primary-500 focus:-primary-500 block w-full p-2.5"
                   placeholder="votre@mail.com"
                 />
               </div>
@@ -88,7 +88,7 @@ export default function Index() {
                 <input
                   type="text"
                   id="subject"
-                  className="block p-3 w-full text-sm text-primary bg-[#1e1e1e] rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                  className="block p-3 w-full text-sm text-primary bg-[#1E293B] rounded-lg   shadow-sm focus:ring-primary-500 focus:-primary-500"
                   placeholder="Dites-moi comment je peux vous aider"
                 />
               </div>
@@ -102,14 +102,14 @@ export default function Index() {
                   id="message"
                   name="message"
                   rows="6"
-                  className="block p-2.5 w-full text-sm text-primary bg-[#1e1e1e] rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                  className="block p-2.5 w-full text-sm text-primary bg-[#1E293B] rounded-lg shadow-sm   focus:ring-primary-500 focus:-primary-500"
                   placeholder="Laissez un commentaire..."></textarea>
               </div>
               <Toaster richColors />
               <button
                 type="submit"
                 onClick={sendEmail}
-                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#7C3AED] sm:w-fit duration-200 hover:bg-[#7c3aede3]">
+                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#0EA5E9] sm:w-fit duration-200 hover:bg-[#0ea4e9a4]">
                 Envoyer
               </button>
             </form>
