@@ -89,7 +89,7 @@ export default function Index() {
                   type="text"
                   id="subject"
                   className="block p-3 w-full text-sm text-primary bg-[#1E293B] rounded-lg   shadow-sm focus:ring-primary-500 focus:-primary-500"
-                  placeholder="Dites-moi comment je peux vous aider"
+                  placeholder="Objet"
                 />
               </div>
               <div className="sm:col-span-2">
@@ -103,7 +103,7 @@ export default function Index() {
                   name="message"
                   rows="6"
                   className="block p-2.5 w-full text-sm text-primary bg-[#1E293B] rounded-lg shadow-sm   focus:ring-primary-500 focus:-primary-500"
-                  placeholder="Laissez un commentaire..."></textarea>
+                  placeholder="Votre message"></textarea>
               </div>
               <Toaster />
               <button
