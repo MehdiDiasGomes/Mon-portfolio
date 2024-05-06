@@ -13,9 +13,8 @@ const Footer = () => {
             <img
               src={Logo}
               class="h-8"
-              alt="Flowbite Logo"
             />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">
               DIAS GOMES Mehdi
             </span>
           </a>
@@ -28,7 +27,7 @@ const Footer = () => {
           </ul>
         </div>
         <hr class="my-6 border-secondary sm:mx-auto lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span class="block text-sm text-gray-500 sm:text-center">
           © 2023{' '}
           <a href="#" class="hover:underline">
             Mehdi DIAS GOMES™
