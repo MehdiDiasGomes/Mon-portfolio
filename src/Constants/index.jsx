@@ -25,6 +25,9 @@ export const xpConst = [
     icon: 'ri-reactjs-fill',
   },
   {
+    icon: 'ri-vuejs-fill',
+  },
+  {
     icon: 'ri-css3-fill',
   },
   {
