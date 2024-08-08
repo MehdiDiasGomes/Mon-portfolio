@@ -23,7 +23,7 @@ const Home = () => {
                 DIAS GOMES
               </span>
             </h1>
-            <p className="pcScreen:px-64 md:text-xl sm:text-paragMobile sm:px-10 text-parag text-secondary text-center">
+            <p className="pcScreen:px-64 md:text-xl sm:text-paragMobile sm:px-10 text-parag text-secondary text-justify sm:hidden md:block">
               Je suis un apprenti développeur web full-stack de 20 ans,
               alternant chez <strong className="text-white">Flippad</strong> à
               Nancy et à{' '}
