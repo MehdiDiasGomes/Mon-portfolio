@@ -24,19 +24,17 @@ const Home = () => {
               </span>
             </h1>
             <p className="pcScreen:px-64 md:text-xl sm:text-paragMobile sm:px-10 text-parag text-secondary text-center">
-              Je suis un apprenti développeur web full-stack de{' '}
-              <span className="font-bold text-primary">20 ans</span>, à la
-              recherche d&apos;un{' '}
-              <span className="font-bold text-primary">
-                contrat en apprentissage
-              </span>{' '}
-              pour préparer un{' '}
-              <span className="font-bold text-primary">Bac+3</span> à Metz
-              Numeric School pour l&apos;année{' '}
-              <span className="font-bold text-primary">2024-2025</span>. Mon
-              objectif est d&apos;acquérir des compétences dans le développement
-              web et de contribuer de manière proactive à des projets
-              passionnants au sein d&apos;une équipe dynamique.
+              Je suis un apprenti développeur web full-stack de 20 ans,
+              alternant chez <strong className="text-white">Flippad</strong> à
+              Nancy et à{' '}
+              <strong className="text-white">Metz Numeric School</strong> pour
+              préparer un{' '}
+              <strong className="text-white">
+                Bachelor Développeur Full Stack
+              </strong>{' '}
+              (Bac+3) en 1 an. Mon objectif est d'acquérir des compétences dans
+              le développement web et de contribuer de manière proactive à des
+              projets passionnants au sein d'une équipe dynamique.
             </p>
           </div>
           <div className="flex gap-3 text-primary">
