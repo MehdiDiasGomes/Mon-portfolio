@@ -4,8 +4,8 @@ import Logo from '../Assets/img/Logo.png'
 
 const Footer = () => {
   return (
-    <footer class="bg-transparent rounded-lg shadow m-4">
-      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    <footer class="bg-transparent rounded-lg">
+      <div class="w-full max-w-screen-xl mx-auto md:py-8">
         <div class="sm:flex sm:items-center sm:flex-col md:flex-row sm:justify-between">
           <a
             href="#"

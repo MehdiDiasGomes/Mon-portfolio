@@ -18,12 +18,12 @@ const Home = () => {
             />
             <h1 className="md:text-5xl sm:text-3xl text-white font-bold text-center">
               Mehdi <br />
-              <span className="bg-gradient-to-r from-gradientPrimary to-gradientSecondary text-transparent bg-clip-text block mt-2">
+              <span className="text-PrimaryText bg-clip-text block mt-2">
                 {' '}
                 DIAS GOMES
               </span>
             </h1>
-            <p className="pcScreen:px-64 md:text-xl sm:text-paragMobile sm:px-10 text-parag text-secondary text-justify sm:hidden md:block">
+            <p className="md:text-xl sm:text-paragMobile text-parag text-secondary text-justify sm:hidden md:block">
               Je suis un apprenti développeur web full-stack de 20 ans,
               alternant chez <strong className="text-white">Flippad</strong> à
               Nancy et à{' '}

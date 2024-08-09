@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-center">
-      <nav className="z-50 flex justify-between px-8 py-8 items-center duration-300 w-[60%] rounded-xl mt-10 max-lg:gap-16 sm:w-[90%]">
+      <nav className="z-50 flex justify-between py-8 items-center duration-300 w-[60%] rounded-xl mt-10 max-lg:gap-16 sm:w-[90%]">
         <div className="w-10">
             <img src={Logo} alt="Logo du site" className="" />
         </div>

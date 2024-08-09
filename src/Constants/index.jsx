@@ -77,7 +77,7 @@ export const EducationConst = [
 export const LienConst = [
   {
     icon: 'ri-linkedin-fill',
-    lien: 'https://www.linkedin.com/in/mehdi-dias-gomes-056654239/',
+    lien: 'https://www.linkedin.com/in/mehdi-dias-gomes-94541a31a/',
   },
   {
     icon: 'ri-github-line',
