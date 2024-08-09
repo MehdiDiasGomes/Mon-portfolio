@@ -24,8 +24,8 @@ export default function Index() {
     }
 
     emailjs
-      .sendForm('service_t9lxowk', 'template_jxzugmp', form.current, {
-        publicKey: 'irlDoLoAtQUldFyRJ',
+      .sendForm('service_7cwu2gi', 'template_kd5ndzf', form.current, {
+        publicKey: '4U1La-wWYO81095y-',
       })
       .then(
         () => {
@@ -43,6 +43,7 @@ export default function Index() {
 
   return (
     <div id="contact">
+      <Toaster />
       <Fade>
         <div className="flex flex-col gap-32 w-full">
           <div>
@@ -163,7 +164,6 @@ export default function Index() {
                       className="block p-2.5 w-full text-sm border-2 border-secondary text-primary bg-[#1e1e1e] rounded-lg shadow-sm   focus:ring-primary-500 focus:-primary-500"
                       placeholder="Votre message"></textarea>
                   </div>
-                  <Toaster />
                   <button
                     type="submit"
                     onClick={sendEmail}
