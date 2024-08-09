@@ -45,25 +45,25 @@ export default function Index() {
     <div id="contact">
       <Toaster />
       <Fade>
-        <div className="flex flex-col gap-32 w-full">
+        <div className="flex flex-col gap-20 w-full sm:px-10 md:px-0">
           <div>
-            <h2 className="mb-3 text-4xl tracking-tight font-extrabold text-center text-primary">
-              Contactez-moi
+            <h2 className="mb-3 sm:text-3xl md:text-5xl font-bold text-center text-PrimaryText">
+              Contactez-moi📧
             </h2>
-            <p className="font-light text-center text-secondary sm:text-xl">
+            <p className="text-center text-secondary sm:text-xl">
               Une question ? Un projet ? N'hésitez pas à me contacter !
             </p>
           </div>
-          <div className="flex md:justify-between md:flex-row sm:flex-col sm:px-10 md:px-0">
-            <section className="flex flex-col gap-14 w-[9/12]">
-              <h3 className="text-3xl text-white font-medium">
+          <div className="flex md:justify-between xl:flex-row sm:flex-col">
+            <section className="flex flex-col gap-14 w-9/12">
+              <h3 className="text-3xl text-start text-white font-medium">
                 Une question ? Un projet ? N'hésitez pas à me{' '}
                 <span className="text-PrimaryText">contacter</span> !
               </h3>
               <div className="flex flex-col items-start gap-10">
                 <div className="flex flex-col items-start gap-3">
                   <a
-                    className="flex items-center gap-5 text-[1.2rem] text-white"
+                    className="flex gap-5 text-white"
                     href="mailto:diasgomes.mehdicours@gmail.com">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export default function Index() {
                     diasgomes.mehdicours@gmail.com
                   </a>
                   <a
-                    className="flex items-center gap-5 text-[1.2rem] text-white"
+                    className="flex gap-5 text-white"
                     href="tel:+33789626927">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

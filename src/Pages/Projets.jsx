@@ -11,7 +11,7 @@ const Projets = () => {
 
         <div className='flex flex-col gap-5 items-center'>
           <h2 className="md:text-5xl sm:text-3xl text-PrimaryText bg-clip-text font-bold">
-            PROJETS
+            PROJETS🛠️
           </h2>
           <div className='w-16 h-1 bg-primary'></div>
         </div>
