@@ -4,6 +4,7 @@ import { Toaster, toast } from 'sonner'
 import emailjs from '@emailjs/browser'
 import Social from '../../Components/Social'
 import { LienConst } from '../../Constants'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function Index() {
   const form = useRef()
@@ -46,13 +47,11 @@ export default function Index() {
       <Toaster />
       <Fade>
         <div className="flex flex-col gap-20 w-full sm:px-10 md:px-0">
-          <div>
-            <h2 className="mb-3 sm:text-3xl md:text-5xl font-bold text-center text-PrimaryText">
-              Contactez-moi📧
+          <div className="flex flex-col gap-5 items-center">
+            <h2 className="sm:text-3xl md:text-5xl font-bold text-center text-PrimaryText">
+              Contactez-moi 📧
             </h2>
-            <p className="text-center text-secondary sm:text-xl">
-              Une question ? Un projet ? N'hésitez pas à me contacter !
-            </p>
+            <div className="w-16 h-1 bg-primary"></div>
           </div>
           <div className="flex md:justify-between xl:flex-row sm:flex-col">
             <section className="flex flex-col gap-14 w-9/12">
@@ -81,9 +80,7 @@ export default function Index() {
                     </svg>
                     diasgomes.mehdicours@gmail.com
                   </a>
-                  <a
-                    className="flex gap-5 text-white"
-                    href="tel:+33789626927">
+                  <a className="flex gap-5 text-white" href="tel:+33789626927">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -167,9 +164,16 @@ export default function Index() {
                   <button
                     type="submit"
                     onClick={sendEmail}
-                    className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#0EA5E9] w-full duration-200 hover:bg-[#0ea4e9a4]">
+                    className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-interactiveColor w-full duration-200 hover:bg-interactiveColorHover">
                     Envoyer
                   </button>
+                  <p className="text-secondary text-[0.8rem]">
+                    *En soumettant ce formulaire, vous acceptez que les
+                    informations saisies soient utilisées pour vous contacter
+                    dans le cadre de votre demande. Vos données resteront
+                    confidentielles et ne seront jamais partagées avec des tiers
+                    sans votre consentement préalable.
+                  </p>
                 </form>
               </div>
             </section>

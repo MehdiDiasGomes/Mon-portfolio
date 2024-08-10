@@ -12,9 +12,8 @@ module.exports = {
 
     extend: {
       colors: {
-        // Dégradé de couleurs
         PrimaryText: {
-          DEFAULT: '#0EA5E9',
+          DEFAULT: '#E5484D',
         },
 
         //Couleurs principales
@@ -24,6 +23,13 @@ module.exports = {
         secondary: {
           DEFAULT: 'rgb(197,197,197)',
         },
+
+        interactiveColor: {
+          DEFAULT: '#611623'
+        },
+        interactiveColorHover: {
+          DEFAULT: '#3B1219'
+        }
       },
 
       fontSize: {
