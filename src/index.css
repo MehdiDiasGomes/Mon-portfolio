@@ -17,14 +17,14 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0ea5e9;
+  background: #E5484D;
   opacity: 0.5;
   transition: 0.3s;
   border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0ea4e9a4;
+  background: #3B1219;
 }
 
 ::-webkit-scrollbar-thumb:hover {
