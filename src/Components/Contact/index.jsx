@@ -4,7 +4,6 @@ import { Toaster, toast } from 'sonner'
 import emailjs from '@emailjs/browser'
 import Social from '../../Components/Social'
 import { LienConst } from '../../Constants'
-import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function Index() {
   const form = useRef()
