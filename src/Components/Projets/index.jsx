@@ -8,7 +8,7 @@ const index = ({ img, titre, lien }) => {
       className="w-projetsImg rounded-xl group md:w-projetsImgMd sm:w-full"
     >
       <img className='rounded-t-md' src={img} alt="" />
-      <div className="flex rounded-b-md justify-between items-center bg-[#15262e] duration-300 text-primary p-5 group-hover:bg-[#1c3846]">
+      <div className="flex rounded-b-md justify-between items-center bg-interactiveColor duration-300 text-primary p-5 group-hover:bg-interactiveColorHover">
         <div className="flex flex-col">
           <span className="text-secondary">En savoir plus</span>
           <h5 className="text-2xl sm:text-xl">{titre}</h5>
