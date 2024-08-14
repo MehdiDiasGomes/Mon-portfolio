@@ -6,7 +6,7 @@ const Xp = () => {
   return (
     <Fade>
       <div className="flex flex-col items-center gap-10" id="xp">
-        <h3 className="text-2xl text-secondary font-bold">EXPÉRIENCE AVEC</h3>
+        <h3 className="text-2xl dark:text-secondary text-gray-900 font-bold">EXPÉRIENCE AVEC</h3>
         <div className="flex md:gap-20 sm:gap-14 sm:flex-wrap sm:justify-center sm:items-center">
           {xpConst.map((e, index) => (
             <Exp key={index} icon={e.icon} />

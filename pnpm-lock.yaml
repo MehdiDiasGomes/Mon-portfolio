@@ -11,6 +11,9 @@ importers:
       '@emailjs/browser':
         specifier: ^4.3.3
         version: 4.3.3
+      lucide-react:
+        specifier: ^0.427.0
+        version: 0.427.0(react@18.2.0)
       pnpm:
         specifier: ^8.15.2
         version: 8.15.3
@@ -31,13 +34,13 @@ importers:
         version: 1.2.2(react@18.2.0)
       react-router-dom:
         specifier: ^6.22.0
-        version: 6.22.0(react-dom@18.2.0)(react@18.2.0)
+        version: 6.22.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-scroll-to-top:
         specifier: ^3.0.0
         version: 3.0.0(react@18.2.0)
       sonner:
         specifier: ^1.4.41
-        version: 1.4.41(react-dom@18.2.0)(react@18.2.0)
+        version: 1.4.41(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     devDependencies:
       '@types/react':
         specifier: ^18.2.43
@@ -1147,6 +1150,11 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
+
+  lucide-react@0.427.0:
+    resolution: {integrity: sha512-lv9s6c5BDF/ccuA0EgTdskTxIe11qpwBDmzRZHJAKtp8LTewAvDvOM+pTES9IpbBuTqkjiMhOmGpJ/CB+mKjFw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
 
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -2812,6 +2820,10 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
+  lucide-react@0.427.0(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+
   merge2@1.4.1: {}
 
   micromatch@4.0.5:
@@ -2948,8 +2960,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.33):
     dependencies:
       lilconfig: 3.0.0
-      postcss: 8.4.33
       yaml: 2.3.4
+    optionalDependencies:
+      postcss: 8.4.33
 
   postcss-nested@6.0.1(postcss@8.4.33):
     dependencies:
@@ -3002,7 +3015,7 @@ snapshots:
       prop-types: 15.8.1
       react: 18.2.0
 
-  react-router-dom@6.22.0(react-dom@18.2.0)(react@18.2.0):
+  react-router-dom@6.22.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@remix-run/router': 1.15.0
       react: 18.2.0
@@ -3136,7 +3149,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  sonner@1.4.41(react-dom@18.2.0)(react@18.2.0):
+  sonner@1.4.41(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)

@@ -13,7 +13,7 @@ import { FaFigma, FaReact } from 'react-icons/fa'
 import { IoLogoVercel } from 'react-icons/io5'
 
 //Composant
-import Devinette from '../Pages/Projets/Devinette'
+import Devinette from '../Pages/Projets/Pokedex'
 import PixelArt from '../Pages/Projets/PixelArt'
 import ToDoList from '../Pages/Projets/ToDoList'
 

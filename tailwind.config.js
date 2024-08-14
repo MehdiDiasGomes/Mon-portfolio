@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
+
   theme: {
     screens: {
       sm: '310px',
@@ -17,19 +19,25 @@ module.exports = {
         },
 
         //Couleurs principales
-        primary: {
+        primaryDark: {
           DEFAULT: 'rgb(255,255,255)',
+        },
+        secondaryDark: {
+          DEFAULT: 'rgb(197,197,197)',
+        },
+        primary: {
+          DEFAULT: '[#1e1e1e]',
         },
         secondary: {
           DEFAULT: 'rgb(197,197,197)',
         },
 
         interactiveColor: {
-          DEFAULT: '#611623'
+          DEFAULT: '#611623',
         },
         interactiveColorHover: {
-          DEFAULT: '#3B1219'
-        }
+          DEFAULT: '#3B1219',
+        },
       },
 
       fontSize: {

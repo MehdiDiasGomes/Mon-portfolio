@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Logo from '../../public/logo.svg'
 
 const Footer = () => {
@@ -17,7 +16,7 @@ const Footer = () => {
           </a>
           <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="#contact" class="hover:text-[#0EA5E9]">
+              <a href="#contact" class="hover:text-interactiveColor">
                 Contact
               </a>
             </li>

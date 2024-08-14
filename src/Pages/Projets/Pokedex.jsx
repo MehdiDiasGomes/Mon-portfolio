@@ -2,7 +2,7 @@ import React from 'react'
 import ProjetTemplate from '../../Components/ProjetsContenu/index'
 import Fade from 'react-reveal/Fade'
 
-const Devinette = ({ data }) => {
+const Pokedex = ({ data }) => {
   return (
     <Fade>
       <ProjetTemplate
@@ -23,4 +23,4 @@ const Devinette = ({ data }) => {
   )
 }
 
-export default Devinette
+export default Pokedex

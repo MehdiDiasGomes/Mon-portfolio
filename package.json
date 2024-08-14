@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "lucide-react": "^0.427.0",
     "pnpm": "^8.15.2",
     "prettier": "^3.2.5",
     "react": "^18.2.0",

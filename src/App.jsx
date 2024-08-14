@@ -9,7 +9,7 @@ import { routes } from './Constants'
 function App() {
   return (
     <>
-      <div className="app flex flex-col gap-10">
+      <div className="app flex flex-col gap-10 dark:bg-[#1e1e1e] bg-white">
         <ScrollToTop />
 
         {/* PAGES */}

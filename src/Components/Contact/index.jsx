@@ -54,14 +54,14 @@ export default function Index() {
           </div>
           <div className="flex md:justify-between xl:flex-row sm:flex-col">
             <section className="flex flex-col gap-14 w-9/12">
-              <h3 className="text-3xl text-start text-white font-medium">
+              <h3 className="text-3xl text-start dark:text-white font-medium">
                 Une question ? Un projet ? N'hésitez pas à me{' '}
                 <span className="text-PrimaryText">contacter</span> !
               </h3>
               <div className="flex flex-col items-start gap-10">
                 <div className="flex flex-col items-start gap-3">
                   <a
-                    className="flex gap-5 text-white"
+                    className="flex gap-5 dark:text-white"
                     href="mailto:diasgomes.mehdicours@gmail.com">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export default function Index() {
                     </svg>
                     diasgomes.mehdicours@gmail.com
                   </a>
-                  <a className="flex gap-5 text-white" href="tel:+33789626927">
+                  <a className="flex gap-5 dark:text-white" href="tel:+33789626927">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -111,53 +111,53 @@ export default function Index() {
                   className="space-y-8"
                   onSubmit={sendEmail}>
                   <div>
-                    <label className="block mb-2 text-sm font-medium text-primary">
+                    <label className="block mb-2 text-sm dark:text-white font-medium text-primary">
                       Nom*
                     </label>
                     <input
                       id="nom"
                       name="nom"
                       onInput={handleInputChange}
-                      className="shadow-sm bg-[#1e1e1e] text-primary text-sm border-2 border-secondary rounded-lg focus:ring-primary-500 focus:-primary-500 block w-full p-2.5"
+                      className="shadow-sm dark:text-white  dark:bg-[#1e1e1e] text-primary text-sm border-2 border-secondary rounded-lg focus:ring-primary-500 focus:-primary-500 block w-full p-2.5"
                       placeholder="Votre nom"
                     />
                   </div>
                   <div>
-                    <label className="block mb-2 text-sm font-medium text-primary">
+                    <label className="block mb-2 text-sm font-medium dark:text-white  text-primary">
                       Adresse mail*
                     </label>
                     <input
                       type="email"
                       id="mail"
                       name="mail"
-                      className="shadow-sm bg-[#1e1e1e] border-2 border-secondary text-primary text-sm rounded-lg focus:ring-primary-500 focus:-primary-500 block w-full p-2.5"
+                      className="shadow-sm dark:text-white  dark:bg-[#1e1e1e] border-2 border-secondary text-primary text-sm rounded-lg focus:ring-primary-500 focus:-primary-500 block w-full p-2.5"
                       placeholder="votre@mail.com"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="subject"
-                      className="block mb-2 text-sm font-medium text-primary">
+                      className="block mb-2 dark:text-white  text-sm font-medium text-primary">
                       Objet*
                     </label>
                     <input
                       type="text"
                       id="subject"
-                      className="block p-3 w-full text-sm border-2 border-secondary text-primary bg-[#1e1e1e] rounded-lg   shadow-sm focus:ring-primary-500 focus:-primary-500"
+                      className="block p-3 dark:text-white  w-full text-sm border-2 border-secondary text-primary dark:bg-[#1e1e1e] rounded-lg   shadow-sm focus:ring-primary-500 focus:-primary-500"
                       placeholder="Objet"
                     />
                   </div>
                   <div className="sm:col-span-2">
                     <label
                       htmlFor="message"
-                      className="block mb-2 text-sm font-medium text-primary">
+                      className="block dark:text-white  mb-2 text-sm font-medium text-primary">
                       Message*
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows="6"
-                      className="block p-2.5 w-full text-sm border-2 border-secondary text-primary bg-[#1e1e1e] rounded-lg shadow-sm   focus:ring-primary-500 focus:-primary-500"
+                      className="block dark:text-white  p-2.5 w-full text-sm border-2 border-secondary text-primary dark:bg-[#1e1e1e] rounded-lg shadow-sm   focus:ring-primary-500 focus:-primary-500"
                       placeholder="Votre message"></textarea>
                   </div>
                   <button
@@ -166,7 +166,7 @@ export default function Index() {
                     className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-interactiveColor w-full duration-200 hover:bg-interactiveColorHover">
                     Envoyer
                   </button>
-                  <p className="text-secondary text-[0.8rem]">
+                  <p className="dark:text-secondary text-gray-900 text-[0.8rem]">
                     *En soumettant ce formulaire, vous acceptez que les
                     informations saisies soient utilisées pour vous contacter
                     dans le cadre de votre demande. Vos données resteront

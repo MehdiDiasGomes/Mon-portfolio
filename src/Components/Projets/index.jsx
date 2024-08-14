@@ -11,9 +11,9 @@ const index = ({ img, titre, lien }) => {
       <div className="flex rounded-b-md justify-between items-center bg-interactiveColor duration-300 text-primary p-5 group-hover:bg-interactiveColorHover">
         <div className="flex flex-col">
           <span className="text-secondary">En savoir plus</span>
-          <h5 className="text-2xl sm:text-xl">{titre}</h5>
+          <h5 className="text-2xl text-white sm:text-xl">{titre}</h5>
         </div>
-        <GoArrowUpRight className="text-2xl" />
+        <GoArrowUpRight className="text-2xl text-white" />
       </div>
     </Link>
   )
